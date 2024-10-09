@@ -1,3 +1,4 @@
+import Button from "@/_components/button";
 import Image from "next/image";
 
 export default function Hero() {
@@ -18,9 +19,7 @@ export default function Hero() {
         through a range of services including SEO, PPC, social media marketing,
         and content creation.
       </p>
-      <button className="h-[4.25rem] w-full mt-10 rounded-[0.875rem] text-xl leading-7 text-white bg-p-dark">
-        Book a consultation
-      </button>{" "}
+      <Button style="mt-10">Book a consultation</Button>
     </section>
   );
 }

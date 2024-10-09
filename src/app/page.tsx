@@ -1,5 +1,6 @@
 import Hero from "@/_sections/Hero";
 import LogoTicker from "@/_sections/LogoTicker";
+import Proposal from "@/_sections/Proposal";
 import Services from "@/_sections/Services";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <LogoTicker />
       <Services />
+      <Proposal />
     </main>
   );
 }
