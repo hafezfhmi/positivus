@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section>
+    <section className="px-5">
       <h1 className="mt-10 text-h1-mob font-medium">
         Navigating the digial landscape for success
       </h1>
