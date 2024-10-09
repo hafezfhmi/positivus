@@ -1,4 +1,4 @@
-import Button from "@/_components/button";
+import Button from "@/_components/Button";
 import Image from "next/image";
 
 export default function Hero() {
