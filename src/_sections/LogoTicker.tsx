@@ -17,7 +17,7 @@ export default function LogoTicker() {
                 key={logo}
                 width={124}
                 height={48}
-                className="w-[124px] h-12 grayscale"
+                className="w-[7.75rem] h-12 grayscale"
               />
             ))}
           </Fragment>
@@ -33,7 +33,7 @@ export default function LogoTicker() {
                 key={logo}
                 width={124}
                 height={48}
-                className="w-[124px] h-12 grayscale"
+                className="w-[7.75rem] h-12 grayscale"
               />
             ))}
           </Fragment>

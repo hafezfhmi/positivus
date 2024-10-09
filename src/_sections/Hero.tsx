@@ -18,7 +18,7 @@ export default function Hero() {
         through a range of services including SEO, PPC, social media marketing,
         and content creation.
       </p>
-      <button className="h-[68px] w-full mt-10 rounded-[14px] text-xl leading-7 text-white bg-dark">
+      <button className="h-[4.25rem] w-full mt-10 rounded-[0.875rem] text-xl leading-7 text-white bg-p-dark">
         Book a consultation
       </button>{" "}
     </section>
