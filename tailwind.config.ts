@@ -5,8 +5,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        dark: "#191A23",
+      },
+      fontSize: {
+        "h1-mob": "2.6875rem",
       },
     },
   },
