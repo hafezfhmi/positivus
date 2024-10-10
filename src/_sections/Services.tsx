@@ -52,7 +52,10 @@ export default function Services() {
       </div>
       <div className="grid gap-7 mt-10">
         {services.map((service, index) => (
-          <Card key={service.line1} style={determineContainerBackground(index)}>
+          <Card
+            key={service.line1}
+            className={determineContainerBackground(index)}
+          >
             <div className="inline-flex flex-col">
               <h3
                 className={`self-start px-[0.43rem] text-h3-mob font-medium ${determineTextBackground(index)} rounded-md`}

@@ -19,7 +19,7 @@ export default function Hero() {
         through a range of services including SEO, PPC, social media marketing,
         and content creation.
       </p>
-      <Button style="mt-10">Book a consultation</Button>
+      <Button className="mt-10">Book a consultation</Button>
     </section>
   );
 }
