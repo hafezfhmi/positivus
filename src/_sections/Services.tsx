@@ -1,3 +1,4 @@
+import Card from "@/_components/Card";
 import Image from "next/image";
 
 const services = [
@@ -51,18 +52,15 @@ export default function Services() {
       </div>
       <div className="grid gap-7 mt-10">
         {services.map((service, index) => (
-          <div
-            key={service.line1}
-            className={`relative p-12 border-p-dark border-[0.0625rem] ${determineContainerBackground(index)} rounded-[2.8125rem] shadow-[0px_0.25rem_#191A23] shadow-p-dark`}
-          >
+          <Card key={service.line1} style={determineContainerBackground(index)}>
             <div className="inline-flex flex-col">
               <h3
-                className={`self-start px-[0.43rem] text-h3-mob font-medium ${determineTextBackground(index)} inline-block rounded-md`}
+                className={`self-start px-[0.43rem] text-h3-mob font-medium ${determineTextBackground(index)} rounded-md`}
               >
                 {service.line1}
               </h3>
               <h3
-                className={`self-start px-[0.43rem] text-h3-mob font-medium ${index === 0 || index % 3 === 0 ? "bg-p-green" : "bg-white"} inline-block rounded-md`}
+                className={`self-start px-[0.43rem] text-h3-mob font-medium ${index === 0 || index % 3 === 0 ? "bg-p-green" : "bg-white"} rounded-md`}
               >
                 {service.line2}
               </h3>
@@ -83,7 +81,7 @@ export default function Services() {
                 className="w-[10.3625rem] h-[8.125rem] min-w-0"
               />
             </div>
-          </div>
+          </Card>
         ))}
       </div>
     </section>
