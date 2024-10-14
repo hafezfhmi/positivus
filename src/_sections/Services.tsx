@@ -42,7 +42,7 @@ export default function Services() {
   return (
     <section className="mt-16 px-5">
       <div className="text-center">
-        <h2 className="px-[0.43rem] text-h2-mob font-medium bg-p-green inline-block rounded-md">
+        <h2 className="px-[0.43rem] text-h2-mob font-medium bg-p-green inline rounded-md">
           Services
         </h2>
         <p className="mt-7 leading-6">
