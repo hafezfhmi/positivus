@@ -13,6 +13,7 @@ const config: Config = {
         "h1-mob": "2.6875rem",
         "h2-mob": "2.25rem",
         "h3-mob": "1.625rem",
+        "h4-mob": "1.125rem",
       },
     },
   },
