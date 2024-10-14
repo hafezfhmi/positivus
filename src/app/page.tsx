@@ -1,3 +1,4 @@
+import CaseStudies from "@/_sections/CaseStudies";
 import Hero from "@/_sections/Hero";
 import LogoTicker from "@/_sections/LogoTicker";
 import Proposal from "@/_sections/Proposal";
@@ -10,6 +11,7 @@ export default function Home() {
       <LogoTicker />
       <Services />
       <Proposal />
+      <CaseStudies />
     </main>
   );
 }
