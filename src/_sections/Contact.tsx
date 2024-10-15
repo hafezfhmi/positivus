@@ -21,7 +21,7 @@ export default function Contact() {
                 type="radio"
                 id="hi"
                 name="contact"
-                className="relative appearance-none w-7 h-7 border-[1px] border-black rounded-full shrink-0 outline-none focus:ring-2 focus:ring-p-dark before:absolute before:w-4 before:h-4 before:rounded-full before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2 checked:before:bg-p-green focus:before:bg-p-green"
+                className="relative appearance-none w-7 h-7 border border-black rounded-full shrink-0 outline-none focus:ring-2 focus:ring-p-dark before:absolute before:w-4 before:h-4 before:rounded-full before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2 checked:before:bg-p-green focus:before:bg-p-green"
                 defaultChecked
               />
               <label htmlFor="hi">Say Hi</label>
@@ -31,7 +31,7 @@ export default function Contact() {
                 type="radio"
                 id="quote"
                 name="contact"
-                className="relative appearance-none w-7 h-7 border-[1px] border-black rounded-full shrink-0 outline-none focus:ring-2 focus:ring-p-dark before:absolute before:w-4 before:h-4 before:rounded-full before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2 checked:before:bg-p-green focus:before:bg-p-green"
+                className="relative appearance-none w-7 h-7 border border-black rounded-full shrink-0 outline-none focus:ring-2 focus:ring-p-dark before:absolute before:w-4 before:h-4 before:rounded-full before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2 checked:before:bg-p-green focus:before:bg-p-green"
               />
               <label htmlFor="quote">Get a Quote</label>
             </div>
@@ -45,7 +45,7 @@ export default function Contact() {
                 type="text"
                 id="name"
                 placeholder="Name"
-                className="w-full py-4 px-5 mt-2.5 rounded-xl block border-[1px] border-black outline-p-dark"
+                className="w-full py-4 px-5 mt-2.5 rounded-xl block border border-black outline-p-dark"
               />
             </div>
             <div>
@@ -56,7 +56,7 @@ export default function Contact() {
                 type="text"
                 id="email"
                 placeholder="Email"
-                className="w-full py-4 px-5 mt-2.5 rounded-xl block border-[1px] border-black outline-p-dark"
+                className="w-full py-4 px-5 mt-2.5 rounded-xl block border border-black outline-p-dark"
               />
             </div>
             <div>
@@ -67,7 +67,7 @@ export default function Contact() {
                 id="message"
                 placeholder="Message"
                 rows={4}
-                className="w-full py-4 px-5 mt-2.5 rounded-xl block border-[1px] border-black outline-p-dark"
+                className="w-full py-4 px-5 mt-2.5 rounded-xl block border border-black outline-p-dark"
               />
             </div>
           </div>

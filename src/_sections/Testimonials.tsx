@@ -36,7 +36,7 @@ export default function Testimonials() {
         </p>
       </div>
       <Card className="p-7 mt-10 bg-p-dark text-white">
-        <p className="relative border-[1px] border-p-green p-7 rounded-[2.8125rem] after:absolute after:left-12 after:bottom-0 after:translate-y-1/2 after:rotate-45 after:w-9 after:h-9 after:border-b-[1px] after:border-r-[1px] after:border-p-green after:bg-p-dark">
+        <p className="relative border border-p-green p-7 rounded-[2.8125rem] after:absolute after:left-12 after:bottom-0 after:translate-y-1/2 after:rotate-45 after:w-9 after:h-9 after:border-b after:border-r after:border-p-green after:bg-p-dark">
           &quot;We have been working with Positivus for the past year and have
           seen a significant increase in website traffic and leads as a result
           of their efforts. The team is professional, responsive, and truly

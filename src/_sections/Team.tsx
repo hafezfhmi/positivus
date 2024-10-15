@@ -69,7 +69,7 @@ export default function Team() {
                 </div>
               </div>
             </div>
-            <p className="leading-6 pt-5 border-t-[1px] border-black">
+            <p className="leading-6 pt-5 border-t border-black">
               {teamMember.description}
             </p>
           </Card>
