@@ -1,4 +1,5 @@
 import CaseStudies from "@/_sections/CaseStudies";
+import Contact from "@/_sections/Contact";
 import Hero from "@/_sections/Hero";
 import LogoTicker from "@/_sections/LogoTicker";
 import Proposal from "@/_sections/Proposal";
@@ -18,6 +19,7 @@ export default function Home() {
       <WorkingProcess />
       <Team />
       <Testimonials />
+      <Contact />
     </main>
   );
 }
