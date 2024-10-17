@@ -26,7 +26,7 @@ export default function CaseStudies() {
             className="mt-5 text-p-green inline-flex items-center gap-3.5 text-xl"
           >
             Learn more
-            <Arrow color1="fill-p-green" className="h-10 -rotate-[30deg]" />
+            <Arrow color1="fill-p-green" className="w-5 -rotate-[30deg]" />
           </Link>
         </Card>
         <Card className="flex-none basis-4/5 bg-p-dark text-white mt-10 py-10">
