@@ -8,12 +8,10 @@ type slideSelectorProps = {
 function SlideSelector({ className }: slideSelectorProps) {
   return (
     <svg
-      width="14"
-      height="14"
       viewBox="0 0 14 14"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
+      className={`w-3.5 ${className}`}
     >
       <path
         d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z"
@@ -27,7 +25,7 @@ export default function Testimonials() {
   return (
     <section className="mt-16 px-5">
       <div className="text-center">
-        <h2 className="px-[0.43rem] text-h2-mob font-medium bg-p-green inline rounded-md">
+        <h2 className="px-1.5 text-h2-mob font-medium bg-p-green inline rounded-md">
           Testimonials
         </h2>
         <p className="mt-7 leading-6">
@@ -48,7 +46,7 @@ export default function Testimonials() {
           <p>Marketing Directory at XYZ Corp</p>
         </div>
         <div className="flex justify-between items-center mt-14 mb-7">
-          <Arrow className="rotate-180" />
+          <Arrow className="w-5 rotate-180" />
           <div className="flex gap-5">
             <SlideSelector />
             <SlideSelector />
@@ -56,7 +54,7 @@ export default function Testimonials() {
             <SlideSelector />
             <SlideSelector />
           </div>
-          <Arrow />
+          <Arrow className="w-5" />
         </div>
       </Card>
     </section>
