@@ -40,7 +40,7 @@ export default function CaseStudies() {
             className="mt-5 text-p-green flex items-center gap-3.5 text-xl"
           >
             Learn more
-            <Arrow color1="fill-p-green" className="h-10 -rotate-[30deg]" />
+            <Arrow color1="fill-p-green" className="w-5 -rotate-[30deg]" />
           </Link>
         </Card>
       </div>
