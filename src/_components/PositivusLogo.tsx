@@ -9,8 +9,6 @@ export default function PositivusLogo({
 }: PositivusLogoProps) {
   return (
     <svg
-      width="144"
-      height="24"
       viewBox="0 0 144 24"
       xmlns="http://www.w3.org/2000/svg"
       className={className}

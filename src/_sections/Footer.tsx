@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="px-5 bg-p-dark">
       <div className="pt-12">
-        <PositivusLogo color1="fill-white" className="mx-auto" />
+        <PositivusLogo color1="fill-white" className="mx-auto w-36 h-6" />
       </div>
       <ul className="flex flex-col items-center gap-3 my-9 text-white">
         <li>About us</li>
@@ -37,21 +37,22 @@ export default function Footer() {
             type="text"
             placeholder="Email"
             className="w-full py-4 px-5 mt-2.5 rounded-xl block border border-white bg-[#292A32] text-white outline-white"
+            required
           />
-          <Button className="mt-5 bg-p-green text-black">
+          <Button className="mt-5 bg-p-green !text-black">
             Subscribe to News
           </Button>
         </form>
       </Card>
       <ul className="flex justify-center gap-5 my-9">
         <li>
-          <LinkedInIcon />
+          <LinkedInIcon className="w-7" />
         </li>
         <li>
-          <FacebookIcon />
+          <FacebookIcon className="w-7" />
         </li>
         <li>
-          <TwitterIcon />
+          <TwitterIcon className="w-7" />
         </li>
       </ul>
       <div className="flex flex-col gap-3.5 pt-9 pb-7 border-t border-white text-center text-white">
