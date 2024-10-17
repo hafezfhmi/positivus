@@ -46,15 +46,29 @@ export default function Testimonials() {
           <p>Marketing Directory at XYZ Corp</p>
         </div>
         <div className="flex justify-between items-center mt-14 mb-7">
-          <Arrow className="w-5 rotate-180" />
+          <button>
+            <Arrow className="w-5 rotate-180" />
+          </button>
           <div className="flex gap-5">
-            <SlideSelector />
-            <SlideSelector />
-            <SlideSelector />
-            <SlideSelector />
-            <SlideSelector />
+            <button>
+              <SlideSelector />
+            </button>
+            <button>
+              <SlideSelector />
+            </button>
+            <button>
+              <SlideSelector />
+            </button>
+            <button>
+              <SlideSelector />
+            </button>
+            <button>
+              <SlideSelector />
+            </button>
           </div>
-          <Arrow className="w-5" />
+          <button>
+            <Arrow className="w-5" />
+          </button>
         </div>
       </Card>
     </section>
