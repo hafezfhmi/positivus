@@ -1,5 +1,5 @@
 import Card from "@/_components/Card";
-import Image from "next/image";
+import Plus from "@/_components/Plus";
 
 const processList = [
   "Consultation",
@@ -14,7 +14,7 @@ export default function WorkingProcess() {
   return (
     <section className="mt-16 px-5">
       <div className="text-center">
-        <h2 className="px-[0.43rem] text-h2-mob font-medium bg-p-green inline rounded-md">
+        <h2 className="px-1.5 text-h2-mob font-medium bg-p-green inline rounded-md">
           Our Working Process
         </h2>
         <p className="mt-7 leading-6">
@@ -25,17 +25,13 @@ export default function WorkingProcess() {
         {processList.map((process, index) => (
           <Card
             key={process}
-            className="flex justify-between items-center gap-8 w-full p-7"
+            className="flex justify-between items-center gap-7 w-full p-7"
           >
-            <p className="font-medium text-[1.875rem]">0{index + 1}</p>
+            <p className="font-medium text-3xl">0{index + 1}</p>
             <h4 className="flex-1 text-h4-mob font-medium">{process}</h4>
-            <Image
-              src="/plus.svg"
-              alt=""
-              height={30}
-              width={30}
-              className="w-7 h-7"
-            />
+            <div className="flex justify-center items-center w-7 h-7 border border-black rounded-full">
+              <Plus />
+            </div>
           </Card>
         ))}
       </div>
