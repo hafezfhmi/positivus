@@ -31,7 +31,7 @@ function determineContainerBackground(index: number) {
     ? "bg-p-dark"
     : (index + 1 - 3 * Math.floor(index / 3)) % 2 === 0
       ? "bg-p-green"
-      : "bg-p-white";
+      : "bg-p-grey";
 }
 
 function determineTextBackground(index: number) {
@@ -42,7 +42,7 @@ export default function Services() {
   return (
     <section className="mt-16 px-5">
       <div className="text-center">
-        <h2 className="px-[0.43rem] text-h2-mob font-medium bg-p-green inline rounded-md">
+        <h2 className="px-1.5 text-h2-mob font-medium bg-p-green inline rounded-md">
           Services
         </h2>
         <p className="mt-7 leading-6">
@@ -58,7 +58,7 @@ export default function Services() {
           >
             <div className="inline-flex flex-col">
               <h3
-                className={`self-start px-[0.43rem] text-h3-mob font-medium ${determineTextBackground(index)} rounded-md`}
+                className={`self-start px-1.5 text-h3-mob font-medium ${determineTextBackground(index)} rounded-md`}
               >
                 {service.line1}
               </h3>
@@ -68,20 +68,20 @@ export default function Services() {
                 {service.line2}
               </h3>
             </div>
-            <div className="flex justify-between gap-5 items-end mt-[1.6875rem]">
+            <div className="flex justify-between gap-5 items-end mt-7">
               <Image
                 src="/arrow-fill.svg"
                 alt=""
-                width={41}
-                height={41}
-                className="w-[2.5625rem] h-[2.5625rem] min-w-0"
+                width={40}
+                height={40}
+                className="w-10 h-10"
               />
               <Image
                 src={`/${service.image}.svg`}
                 alt={service.image}
-                width={165}
-                height={130}
-                className="w-[10.3625rem] h-[8.125rem] min-w-0"
+                width={160}
+                height={128}
+                className="w-40 h-32"
               />
             </div>
           </Card>
