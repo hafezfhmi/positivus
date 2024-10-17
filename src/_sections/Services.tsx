@@ -1,5 +1,7 @@
+import Arrow from "@/_components/Arrow";
 import Card from "@/_components/Card";
 import Image from "next/image";
+import Link from "next/link";
 
 const services = [
   {
@@ -38,6 +40,10 @@ function determineTextBackground(index: number) {
   return index === 0 || index % 3 === 0 ? "bg-p-green" : "bg-white";
 }
 
+function determineArrowColor(index: number) {
+  return (index + 1 - 3 * Math.floor(index / 3)) % 3 === 0 ? "dark" : "normal";
+}
+
 export default function Services() {
   return (
     <section className="mt-16 px-5">
@@ -52,39 +58,39 @@ export default function Services() {
       </div>
       <div className="grid gap-7 mt-10">
         {services.map((service, index) => (
-          <Card
-            key={service.line1}
-            className={determineContainerBackground(index)}
-          >
-            <div className="inline-flex flex-col">
-              <h3
-                className={`self-start px-1.5 text-h3-mob font-medium ${determineTextBackground(index)} rounded-md`}
-              >
-                {service.line1}
-              </h3>
-              <h3
-                className={`self-start px-[0.43rem] text-h3-mob font-medium ${index === 0 || index % 3 === 0 ? "bg-p-green" : "bg-white"} rounded-md`}
-              >
-                {service.line2}
-              </h3>
-            </div>
-            <div className="flex justify-between gap-5 items-end mt-7">
-              <Image
-                src="/arrow-fill.svg"
-                alt=""
-                width={40}
-                height={40}
-                className="w-10 h-10"
-              />
-              <Image
-                src={`/${service.image}.svg`}
-                alt={service.image}
-                width={160}
-                height={128}
-                className="w-40 h-32"
-              />
-            </div>
-          </Card>
+          <Link href="#" key={service.line1}>
+            <Card className={determineContainerBackground(index)}>
+              <div className="inline-flex flex-col">
+                <h3
+                  className={`self-start px-1.5 text-h3-mob font-medium ${determineTextBackground(index)} rounded-md`}
+                >
+                  {service.line1}
+                </h3>
+                <h3
+                  className={`self-start px-[0.43rem] text-h3-mob font-medium ${index === 0 || index % 3 === 0 ? "bg-p-green" : "bg-white"} rounded-md`}
+                >
+                  {service.line2}
+                </h3>
+              </div>
+              <div className="flex justify-between gap-5 items-end mt-7">
+                <Arrow
+                  color1={
+                    determineArrowColor(index) === "normal"
+                      ? "fill-p-green"
+                      : "fill-p-dark"
+                  }
+                  className={`w-10 h-10 p-2 rounded-full -rotate-[30deg] ${determineArrowColor(index) === "normal" ? "bg-black" : "bg-white"}`}
+                />
+                <Image
+                  src={`/${service.image}.svg`}
+                  alt={service.image}
+                  width={160}
+                  height={128}
+                  className="w-40 h-32"
+                />
+              </div>
+            </Card>
+          </Link>
         ))}
       </div>
     </section>
