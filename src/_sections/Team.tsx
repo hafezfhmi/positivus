@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Card from "@/_components/Card";
 import Button from "@/_components/Button";
+import LinkedInIcon from "@/_components/LinkedInIcon";
+import Link from "next/link";
 
 const teamMembers = [
   {
@@ -37,7 +39,7 @@ export default function Team() {
   return (
     <section className="mt-16 px-5">
       <div className="text-center">
-        <h2 className="px-[0.43rem] text-h2-mob font-medium bg-p-green inline rounded-md">
+        <h2 className="px-1.5 text-h2-mob font-medium bg-p-green inline rounded-md">
           Team
         </h2>
         <p className="mt-7 leading-6">
@@ -56,13 +58,13 @@ export default function Team() {
                 height={102}
               />
               <div className="flex-1 flex flex-col justify-between">
-                <Image
-                  src="/linkedin.svg"
-                  alt="linkedin"
-                  width={34}
-                  height={34}
-                  className="ml-auto self-start"
-                />
+                <Link href="#" className="ml-auto self-start">
+                  <LinkedInIcon
+                    color1="fill-black"
+                    color2="fill-p-green"
+                    className="h-10 w-10"
+                  />
+                </Link>
                 <div>
                   <h4 className="text-h4-mob font-medium">{teamMember.name}</h4>
                   <p className="leading-6">{teamMember.title}</p>
@@ -75,7 +77,9 @@ export default function Team() {
           </Card>
         ))}
       </div>
-      <Button className="mt-9">See all team</Button>
+      <Button href="#" className="mt-9">
+        See all team
+      </Button>
     </section>
   );
 }
