@@ -1,15 +1,17 @@
-type LogoProps = {
+type PositivusLogoProps = {
   className?: string;
   color1?: string;
 };
 
-export default function Logo({ color1 = "fill-black", className }: LogoProps) {
+export default function PositivusLogo({
+  color1 = "fill-black",
+  className,
+}: PositivusLogoProps) {
   return (
     <svg
       width="144"
       height="24"
       viewBox="0 0 144 24"
-      // fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
