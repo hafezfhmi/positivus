@@ -4,12 +4,12 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="px-5">
-      <h1 className="mt-10 text-h1-mob font-medium">
+      <h1 className="mt-3 text-h1-mob font-medium">
         Navigating the digital landscape for success
       </h1>
       <Image
         src="/hero-illustration.svg"
-        alt="A megaphone"
+        alt=""
         width={360}
         height={310}
         className="w-full px-3.5 mt-2.5"
