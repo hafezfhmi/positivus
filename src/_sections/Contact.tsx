@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section className="mt-16 px-5 pb-20">
       <div className="text-center">
-        <h2 className="px-[0.43rem] text-h2-mob font-medium bg-p-green inline rounded-md">
+        <h2 className="px-1.5 text-h2-mob font-medium bg-p-green inline rounded-md">
           Contact Us
         </h2>
         <p className="mt-7 leading-6">
@@ -14,7 +14,7 @@ export default function Contact() {
       </div>
 
       <form action="">
-        <Card border={false} className="bg-p-grey p-10 mt-10">
+        <Card border={false} className="bg-p-grey py-10 px-7 mt-10">
           <div className="flex justify-between items-center pb-10 px-5">
             <div className="flex items-center gap-3.5">
               <input
@@ -57,6 +57,7 @@ export default function Contact() {
                 id="email"
                 placeholder="Email"
                 className="w-full py-4 px-5 mt-2.5 rounded-xl block border border-black outline-p-dark"
+                required
               />
             </div>
             <div>
@@ -68,6 +69,7 @@ export default function Contact() {
                 placeholder="Message"
                 rows={4}
                 className="w-full py-4 px-5 mt-2.5 rounded-xl block border border-black outline-p-dark"
+                required
               />
             </div>
           </div>
