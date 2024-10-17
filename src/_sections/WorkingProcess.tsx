@@ -29,7 +29,7 @@ export default function WorkingProcess() {
           >
             <p className="font-medium text-3xl">0{index + 1}</p>
             <h4 className="flex-1 text-h4-mob font-medium">{process}</h4>
-            <div className="flex justify-center items-center w-7 h-7 border border-black rounded-full">
+            <div className="flex justify-center items-center w-7 h-7 border border-black rounded-full cursor-pointer">
               <Plus />
             </div>
           </Card>
