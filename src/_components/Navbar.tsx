@@ -3,7 +3,7 @@ import PositivusLogo from "./PositivusLogo";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center pt-7 px-5">
+    <nav className="flex justify-between items-center sticky top-0 bg-white p-7 px-5 z-50">
       <Link href="#">
         <PositivusLogo />
       </Link>
