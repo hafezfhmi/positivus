@@ -23,7 +23,7 @@ export default function CaseStudies() {
           </p>
           <Link
             href="#"
-            className="mt-5 text-p-green flex items-center gap-3.5 text-xl"
+            className="mt-5 text-p-green inline-flex items-center gap-3.5 text-xl"
           >
             Learn more
             <Arrow color1="fill-p-green" className="h-10 -rotate-[30deg]" />
