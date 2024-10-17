@@ -79,7 +79,7 @@ export default function Services() {
                       ? "fill-p-green"
                       : "fill-p-dark"
                   }
-                  className={`w-10 h-10 p-2 rounded-full -rotate-[30deg] ${determineArrowColor(index) === "normal" ? "bg-black" : "bg-white"}`}
+                  className={`w-10 rounded-full -rotate-[30deg] ${determineArrowColor(index) === "normal" ? "bg-black" : "bg-white"}`}
                 />
                 <Image
                   src={`/${service.image}.svg`}
