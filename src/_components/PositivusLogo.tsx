@@ -13,7 +13,7 @@ export default function PositivusLogo({
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_346_1160)">
+      <g clipPath="url(#clip0_346_1160)">
         <path
           d="M11.8063 3.62989L23.3513 0.228516L19.9826 11.8063L23.3513 23.3513L11.8063 19.9826L0.228516 23.3513L3.62989 11.8063L0.228516 0.228516L11.8063 3.62989Z"
           className={color1}
