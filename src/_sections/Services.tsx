@@ -46,49 +46,67 @@ function determineArrowColor(index: number) {
 
 export default function Services() {
   return (
-    <section className="mt-16 px-5">
-      <div className="text-center">
-        <h2 className="px-1.5 text-h2-mob font-medium bg-p-green inline rounded-md">
+    <section className="mt-16 lg:mt-36 px-5">
+      <div className="lg:flex lg:gap-10 text-center lg:text-start">
+        <h2 className="px-1.5 text-h2-mob lg:text-h2 lg:self-start font-medium bg-p-green inline rounded-md">
           Services
         </h2>
-        <p className="mt-7 leading-6">
+        <p className="mt-7 lg:mt-0 leading-6 lg:text-lg lg:max-w-xl">
           At our digital marketing agency, we offer a range of services to help
           businesses grow and succeed online. These services include:
         </p>
       </div>
-      <div className="grid gap-7 mt-10">
+      <div className="grid lg:grid-cols-2 auto-rows-fr gap-7 lg:gap-10 mt-10 lg:mt-20">
         {services.map((service, index) => (
           <Link href="#" key={service.line1}>
-            <Card className={determineContainerBackground(index)}>
-              <div className="inline-flex flex-col">
-                <h3
-                  className={`self-start px-1.5 text-h3-mob font-medium ${determineTextBackground(index)} rounded-md`}
-                >
-                  {service.line1}
-                </h3>
-                <h3
-                  className={`self-start px-[0.43rem] text-h3-mob font-medium ${index === 0 || index % 3 === 0 ? "bg-p-green" : "bg-white"} rounded-md`}
-                >
-                  {service.line2}
-                </h3>
+            <Card
+              className={`xl:grid xl:grid-cols-2 xl:gap-16 xl:h-full ${determineContainerBackground(index)}`}
+            >
+              <div>
+                <div className="inline-flex flex-col">
+                  <h3
+                    className={`self-start px-1.5 text-h3-mob lg:text-h3 font-medium ${determineTextBackground(index)} rounded-md`}
+                  >
+                    {service.line1}
+                  </h3>
+                  <h3
+                    className={`self-start px-[0.43rem] text-h3-mob lg:text-h3 font-medium ${index === 0 || index % 3 === 0 ? "bg-p-green" : "bg-white"} rounded-md`}
+                  >
+                    {service.line2}
+                  </h3>
+                </div>
+                <div className="flex justify-between gap-5 items-end mt-7 xl:mt-24">
+                  <div className="flex items-center gap-4">
+                    <Arrow
+                      color1={
+                        determineArrowColor(index) === "normal"
+                          ? "fill-p-green"
+                          : "fill-p-dark"
+                      }
+                      className={`w-10 h-10 p-2 rounded-full -rotate-[30deg] ${determineArrowColor(index) === "normal" ? "bg-black" : "bg-white"}`}
+                    />
+                    <p
+                      className={`hidden xl:block text-xl ${determineArrowColor(index) === "normal" ? "text-black" : "text-white"}`}
+                    >
+                      Learn more
+                    </p>
+                  </div>
+                  <Image
+                    src={`/${service.image}.svg`}
+                    alt={service.image}
+                    width={160}
+                    height={128}
+                    className="w-40 h-32 xl:hidden"
+                  />
+                </div>
               </div>
-              <div className="flex justify-between gap-5 items-end mt-7">
-                <Arrow
-                  color1={
-                    determineArrowColor(index) === "normal"
-                      ? "fill-p-green"
-                      : "fill-p-dark"
-                  }
-                  className={`w-10 h-10 p-2 rounded-full -rotate-[30deg] ${determineArrowColor(index) === "normal" ? "bg-black" : "bg-white"}`}
-                />
-                <Image
-                  src={`/${service.image}.svg`}
-                  alt={service.image}
-                  width={160}
-                  height={128}
-                  className="w-40 h-32"
-                />
-              </div>
+              <Image
+                src={`/${service.image}.svg`}
+                alt={service.image}
+                width={160}
+                height={128}
+                className="w-auto h-48 hidden xl:block self-center justify-self-end"
+              />
             </Card>
           </Link>
         ))}
