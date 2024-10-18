@@ -10,6 +10,7 @@ const config: Config = {
         "p-grey": "#F3F3F3",
       },
       fontSize: {
+        h1: "3.75rem",
         "h1-mob": "2.6875rem",
         "h2-mob": "2.25rem",
         "h3-mob": "1.625rem",
