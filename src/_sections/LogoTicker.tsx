@@ -8,7 +8,7 @@ const logoGroupCombined = [...logoGroup1, ...logoGroup2];
 
 export default function LogoTicker() {
   return (
-    <section className="flex flex-col gap-5 mt-16 overflow-hidden">
+    <section className="flex flex-col gap-5 mt-16 lg:mt-24 overflow-hidden">
       {/* Mobile ticker start */}
       <div className="flex">
         <motion.div
