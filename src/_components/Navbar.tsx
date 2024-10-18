@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center sticky top-0 bg-white p-7 px-5 z-50">
+    <nav className="flex justify-between items-center top-0 bg-white py-7 px-5 z-50">
       <Link href="#">
         <PositivusLogo className="w-36 h-6 xl:w-52 xl:h-9" />
       </Link>
@@ -27,7 +27,10 @@ export default function Navbar() {
         <li className="flex-shrink-0">
           <Link href="#">Blog</Link>
         </li>
-        <Button className="bg-white !text-black border border-black !text-lg xl:!text-xl">
+        <Button
+          href="#"
+          className="bg-white !text-black border border-black !text-lg xl:!text-xl"
+        >
           Request a quote
         </Button>
       </ul>
