@@ -46,7 +46,7 @@ function determineArrowColor(index: number) {
 
 export default function Services() {
   return (
-    <section className="mt-16 lg:mt-36 px-5">
+    <section className="container mt-16 lg:mt-36">
       <div className="lg:flex lg:gap-10 text-center lg:text-start">
         <h2 className="px-1.5 text-h2-mob lg:text-h2 lg:self-start font-medium bg-p-green inline rounded-md">
           Services

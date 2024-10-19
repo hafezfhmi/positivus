@@ -3,6 +3,10 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    container: {
+      center: true,
+      padding: "1.25rem",
+    },
     extend: {
       colors: {
         "p-dark": "#191A23",

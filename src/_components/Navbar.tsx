@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center top-0 bg-white py-7 px-5 z-50">
+    <nav className="container flex justify-between items-center top-0 bg-white py-7 z-50">
       <Link href="#">
         <PositivusLogo className="w-36 h-6 xl:w-52 xl:h-9" />
       </Link>

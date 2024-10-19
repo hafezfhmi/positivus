@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Proposal() {
   return (
-    <section className="mt-16 lg:mt-36 px-5">
+    <section className="container mt-16 lg:mt-36">
       <Card
         className="block lg:grid lg:grid-cols-2 lg:gap-20 lg:p-14 bg-p-grey"
         border={false}

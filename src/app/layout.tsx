@@ -21,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${spaceGrotesk.className} antialiased container mx-auto`}
-      >
+      <body className={`${spaceGrotesk.className} antialiased`}>
         <Navbar />
         {children}
       </body>
