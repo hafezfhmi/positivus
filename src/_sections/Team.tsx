@@ -33,29 +33,47 @@ const teamMembers = [
     description:
       "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
   },
+  {
+    name: "Michael Brown",
+    title: "Senior SEO Specialist",
+    image: "michael-brown.svg",
+    description:
+      "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
+  },
+  {
+    name: "Emily Johnson",
+    title: "PPC Manager",
+    image: "emily-johnson.svg",
+    description:
+      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
+  },
 ];
 
 export default function Team() {
   return (
-    <section className="mt-16 px-5">
-      <div className="text-center">
-        <h2 className="px-1.5 text-h2-mob font-medium bg-p-green inline rounded-md">
-          Team
+    <section className="container mt-16 lg:mt-36">
+      <div className="lg:flex lg:gap-10 text-center lg:text-start">
+        <h2 className="px-1.5 text-h2-mob lg:text-h2 lg:self-start font-medium bg-p-green inline rounded-md">
+          Teams
         </h2>
-        <p className="mt-7 leading-6">
+        <p className="mt-7 lg:mt-0 leading-6 lg:text-lg lg:max-w-xl">
           Meet the skilled and experienced team behind our successful digital
           marketing strategies
         </p>
       </div>
-      <div className="grid gap-7 mt-10">
-        {teamMembers.map((teamMember) => (
-          <Card key={teamMember.name}>
-            <div className="flex gap-5 pb-5">
+      <div className="grid xl:grid-cols-3 gap-7 mt-10 lg:mt-20">
+        {teamMembers.map((teamMember, index) => (
+          <Card
+            key={teamMember.name}
+            className={`py-10 px-12 xl:px-9 ${index >= 4 && "hidden xl:block"}`}
+          >
+            <div className="flex gap-5 pb-5 xl:pb-7">
               <Image
                 src={`/${teamMember.image}`}
                 alt={teamMember.name}
                 width={105}
                 height={102}
+                className="w-[6.5625rem] h-auto"
               />
               <div className="flex-1 flex flex-col justify-between">
                 <Link href="#" className="ml-auto self-start">
@@ -66,20 +84,26 @@ export default function Team() {
                   />
                 </Link>
                 <div>
-                  <h4 className="text-h4-mob font-medium">{teamMember.name}</h4>
-                  <p className="leading-6">{teamMember.title}</p>
+                  <h4 className="text-h4-mob xl:text-h4 font-medium">
+                    {teamMember.name}
+                  </h4>
+                  <p className="leading-6 xl:leading-normal xl:text-lg">
+                    {teamMember.title}
+                  </p>
                 </div>
               </div>
             </div>
-            <p className="leading-6 pt-5 border-t border-black">
+            <p className="leading-6 xl:leading-normal xl:text-lg pt-5 xl:pt-7 border-t border-black">
               {teamMember.description}
             </p>
           </Card>
         ))}
       </div>
-      <Button href="#" className="mt-9">
-        See all team
-      </Button>
+      <div className="block xl:flex xl:justify-end">
+        <Button href="#" className="xl:w-auto mt-9 xl:mt-10 xl:px-20">
+          See all team
+        </Button>
+      </div>
     </section>
   );
 }
