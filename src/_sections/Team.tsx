@@ -67,7 +67,7 @@ export default function Team() {
             key={teamMember.name}
             className={`py-10 px-12 xl:px-9 ${index >= 4 && "hidden xl:block"}`}
           >
-            <div className="flex gap-5 pb-5 xl:pb-7">
+            <div className="flex items-end gap-5 relative pb-5 xl:pb-7">
               <Image
                 src={`/${teamMember.image}`}
                 alt={teamMember.name}
@@ -75,22 +75,20 @@ export default function Team() {
                 height={102}
                 className="w-[6.5625rem] h-auto"
               />
-              <div className="flex-1 flex flex-col justify-between">
-                <Link href="#" className="ml-auto self-start">
-                  <LinkedInIcon
-                    color1="fill-black"
-                    color2="fill-p-green"
-                    className="h-10 w-10"
-                  />
-                </Link>
-                <div>
-                  <h4 className="text-h4-mob xl:text-h4 font-medium">
-                    {teamMember.name}
-                  </h4>
-                  <p className="leading-6 xl:leading-normal xl:text-lg">
-                    {teamMember.title}
-                  </p>
-                </div>
+              <Link href="#" className="absolute top-0 right-0">
+                <LinkedInIcon
+                  color1="fill-black"
+                  color2="fill-p-green"
+                  className="h-10 w-10"
+                />
+              </Link>
+              <div className="flex-1">
+                <h4 className="text-h4-mob xl:text-h4 font-medium">
+                  {teamMember.name}
+                </h4>
+                <p className="leading-6 xl:leading-normal xl:text-lg">
+                  {teamMember.title}
+                </p>
               </div>
             </div>
             <p className="leading-6 xl:leading-normal xl:text-lg pt-5 xl:pt-7 border-t border-black">
