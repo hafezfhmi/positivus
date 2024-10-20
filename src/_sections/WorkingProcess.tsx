@@ -18,7 +18,8 @@ export default function WorkingProcess() {
           Our Working Process
         </h2>
         <p className="mt-7 lg:mt-0 leading-6 lg:text-lg lg:max-w-xl">
-          Step-by-Step Guide to Achieving Your Business Goals
+          Step-by-Step Guide to Achieving <br className="hidden lg:inline" />
+          Your Business Goals
         </p>
       </div>
       <div className="flex flex-col gap-7 mt-7 lg:mt-20">

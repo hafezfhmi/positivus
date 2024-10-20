@@ -11,8 +11,9 @@ export default function CaseStudies() {
             Case Studies
           </h2>
           <p className="mt-7 lg:mt-0 leading-6 lg:text-lg lg:max-w-xl">
-            Explore Real-Life Examples of Our Proven Digital Marketing Success
-            through Our Case Studies
+            Explore Real-Life Examples of Our Proven Digital Marketing{" "}
+            <br className="hidden lg:inline" />
+            Success through Our Case Studies
           </p>
         </div>
         <div className="grid auto-cols-[80%] md:auto-cols-[60%] xl:grid-cols-3 grid-flow-col gap-5 xl:gap-0 pl-5 xl:px-0 xl:py-16 mt-10 lg:mt-20 xl:bg-p-dark xl:rounded-[2.8125rem]">

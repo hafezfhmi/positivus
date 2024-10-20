@@ -52,8 +52,9 @@ export default function Services() {
           Services
         </h2>
         <p className="mt-7 lg:mt-0 leading-6 lg:text-lg lg:max-w-xl">
-          At our digital marketing agency, we offer a range of services to help
-          businesses grow and succeed online. These services include:
+          At our digital marketing agency, we offer a range of services to{" "}
+          <br className="hidden lg:inline" />
+          help businesses grow and succeed online. These services include:
         </p>
       </div>
       <div className="grid lg:grid-cols-2 auto-rows-fr gap-7 lg:gap-10 mt-10 lg:mt-20">
