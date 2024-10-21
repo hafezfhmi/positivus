@@ -5,6 +5,27 @@ type slideSelectorProps = {
   className?: string;
 };
 
+const testimonials = [
+  {
+    testimonial:
+      '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
+    author: "John Smith",
+    title: "Marketing Directory at XYZ Corp",
+  },
+  {
+    testimonial:
+      '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
+    author: "John Smith",
+    title: "Marketing Directory at XYZ Corp",
+  },
+  {
+    testimonial:
+      '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
+    author: "John Smith",
+    title: "Marketing Directory at XYZ Corp",
+  },
+];
+
 function SlideSelector({ className }: slideSelectorProps) {
   return (
     <svg
@@ -23,29 +44,35 @@ function SlideSelector({ className }: slideSelectorProps) {
 
 export default function Testimonials() {
   return (
-    <section className="mt-16 px-5">
-      <div className="text-center">
-        <h2 className="px-1.5 text-h2-mob font-medium bg-p-green inline rounded-md">
+    <section className="container mt-16 lg:mt-24">
+      <div className="lg:flex lg:gap-10 text-center lg:text-start">
+        <h2 className="px-1.5 text-h2-mob lg:text-h2 lg:self-start font-medium bg-p-green inline rounded-md">
           Testimonials
         </h2>
-        <p className="mt-7 leading-6">
+        <p className="mt-7 lg:mt-0 leading-6 lg:text-lg lg:max-w-xl">
           Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
           about Our Digital Marketing Services
         </p>
       </div>
-      <Card className="p-7 mt-10 bg-p-dark text-white">
-        <p className="relative border border-p-green p-7 rounded-[2.8125rem] after:absolute after:left-12 after:bottom-0 after:translate-y-1/2 after:rotate-45 after:w-9 after:h-9 after:border-b after:border-r after:border-p-green after:bg-p-dark">
-          &quot;We have been working with Positivus for the past year and have
-          seen a significant increase in website traffic and leads as a result
-          of their efforts. The team is professional, responsive, and truly
-          cares about the success of our business. We highly recommend Positivus
-          to any company looking to grow their online presence.&quot;
-        </p>
-        <div className="ml-16 mt-10">
-          <p className="font-medium text-p-green text-lg">John Smith</p>
-          <p>Marketing Directory at XYZ Corp</p>
+      <Card className="py-7 lg:pt-20 px-0 mt-10 lg:mt-20 bg-p-dark text-white overflow-hidden">
+        <div className="px-7 lg:px-12">
+          <div className="grid auto-cols-[100%] lg:auto-cols-[50%] grid-flow-col gap-7 lg:gap-12">
+            {testimonials.map((testimonial, index) => (
+              <div key={index}>
+                <p className="relative border border-p-green p-7 lg:p-12 rounded-[2.8125rem] leading-6 lg:leading-normal lg:text-lg after:absolute after:left-12 after:bottom-0 after:translate-y-1/2 after:rotate-45 after:w-9 after:h-9 after:border-b after:border-r after:border-p-green after:bg-p-dark">
+                  {testimonial.testimonial}
+                </p>
+                <div className="ml-16 mt-10">
+                  <p className="font-medium text-p-green text-lg lg:text-h4">
+                    {testimonial.author}
+                  </p>
+                  <p className="lg:text-lg">{testimonial.title}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex justify-between items-center mt-14 mb-7">
+        <div className="flex justify-between items-center lg:max-w-[35.25rem] px-7 mt-14 mx-auto lg:mt-28 mb-7 lg:mb-10">
           <button>
             <Arrow className="w-5 rotate-180" />
           </button>
