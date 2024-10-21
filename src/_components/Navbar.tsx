@@ -29,7 +29,7 @@ export default function Navbar() {
         </li>
         <Button
           href="#"
-          className="border border-black bg-white !text-lg !text-black xl:!text-xl"
+          className="border border-black bg-white !text-lg !text-black hover:bg-p-green xl:!text-xl"
         >
           Request a quote
         </Button>
