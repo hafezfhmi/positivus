@@ -17,7 +17,9 @@ export default function Proposal() {
             Contact us today to learn more about how our digital marketing
             services can help your business grow and succeed online.
           </p>
-          <Button className="mt-5 lg:mt-6 lg:w-auto">Get your proposal</Button>
+          <Button className="mt-5 hover:border hover:border-black hover:bg-p-green hover:!text-black lg:mt-6 lg:w-auto">
+            Get your proposal
+          </Button>
         </div>
         <div className="relative">
           <Image
