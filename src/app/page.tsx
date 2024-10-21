@@ -1,6 +1,5 @@
 import CaseStudies from "@/_sections/CaseStudies";
 import Contact from "@/_sections/Contact";
-import Footer from "@/_sections/Footer";
 import Hero from "@/_sections/Hero";
 import LogoTicker from "@/_sections/LogoTicker";
 import Proposal from "@/_sections/Proposal";
@@ -21,7 +20,6 @@ export default function Home() {
       <Team />
       <Testimonials />
       <Contact />
-      <Footer />
     </main>
   );
 }
