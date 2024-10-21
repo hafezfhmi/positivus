@@ -13,6 +13,7 @@ export default function Hero() {
           alt=""
           width={360}
           height={310}
+          priority={true}
           className="w-full px-3.5 mt-2.5 md:hidden"
         />
         <p className="mt-5 leading-6 xl:text-xl">
@@ -27,6 +28,7 @@ export default function Hero() {
         alt=""
         width={360}
         height={310}
+        priority={true}
         className="w-full md:w-1/2 px-3.5 mt-2.5 hidden md:block"
       />
     </section>
