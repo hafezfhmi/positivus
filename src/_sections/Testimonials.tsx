@@ -50,8 +50,9 @@ export default function Testimonials() {
           Testimonials
         </h2>
         <p className="mt-7 lg:mt-0 leading-6 lg:text-lg lg:max-w-xl">
-          Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
-          about Our Digital Marketing Services
+          Hear from Our Satisfied Clients: Read Our Testimonials{" "}
+          <br className="hidden lg:inline" />
+          to Learn More about Our Digital Marketing Services
         </p>
       </div>
       <Card className="py-7 lg:pt-20 px-0 mt-10 lg:mt-20 bg-p-dark text-white overflow-hidden">

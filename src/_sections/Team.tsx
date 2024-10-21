@@ -57,8 +57,9 @@ export default function Team() {
           Teams
         </h2>
         <p className="mt-7 lg:mt-0 leading-6 lg:text-lg lg:max-w-xl">
-          Meet the skilled and experienced team behind our successful digital
-          marketing strategies
+          Meet the skilled and experienced team behind our{" "}
+          <br className="hidden lg:inline" />
+          successful digital marketing strategies
         </p>
       </div>
       <div className="grid xl:grid-cols-3 gap-7 mt-10 lg:mt-20">
