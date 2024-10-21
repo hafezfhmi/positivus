@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="container md:flex items-center mt-2 md:mt-4 lg:mt-8 xl:mt-12 xl:gap-20">
+    <section className="container mt-2 items-center md:mt-4 md:flex lg:mt-8 xl:mt-12 xl:gap-20">
       <div className="md:w-1/2">
-        <h1 className="mt-3 text-h1-mob xl:text-h1 font-medium md:leading-tight lg:leading-normal">
+        <h1 className="mt-3 text-h1-mob font-medium md:leading-tight lg:leading-normal xl:text-h1">
           Navigating the digital landscape for success
         </h1>
         <Image
@@ -14,7 +14,7 @@ export default function Hero() {
           width={360}
           height={310}
           priority={true}
-          className="w-full px-3.5 mt-2.5 md:hidden"
+          className="mt-2.5 w-full px-3.5 md:hidden"
         />
         <p className="mt-5 leading-6 xl:text-xl">
           Our digital marketing agency helps businesses grow and succeed online
@@ -29,7 +29,7 @@ export default function Hero() {
         width={360}
         height={310}
         priority={true}
-        className="w-full md:w-1/2 px-3.5 mt-2.5 hidden md:block"
+        className="mt-2.5 hidden w-full px-3.5 md:block md:w-1/2"
       />
     </section>
   );

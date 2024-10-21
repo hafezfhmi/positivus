@@ -13,7 +13,7 @@ export default function Card({
 }: CardProps) {
   return (
     <div
-      className={`p-12 rounded-[2.8125rem] ${border && "border-p-dark border shadow-[0px_0.25rem_#191A23] shadow-p-dark"} ${className}`}
+      className={`rounded-[2.8125rem] p-12 ${border && "border border-p-dark shadow-[0px_0.25rem_#191A23] shadow-p-dark"} ${className}`}
     >
       {children}
     </div>

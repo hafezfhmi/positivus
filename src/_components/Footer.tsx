@@ -7,22 +7,22 @@ import TwitterIcon from "@/_components/TwitterIcon";
 
 export default function Footer() {
   return (
-    <footer className="mt-[5.625rem] lg:mt-36 bg-p-dark lg:bg-transparent">
-      <div className="container lg:p-14 lg:rounded-t-[2.8125rem] lg:bg-p-dark">
-        <div className="lg:flex lg:justify-between lg:items-end">
+    <footer className="mt-[5.625rem] bg-p-dark lg:mt-36 lg:bg-transparent">
+      <div className="container lg:rounded-t-[2.8125rem] lg:bg-p-dark lg:p-14">
+        <div className="lg:flex lg:items-end lg:justify-between">
           <div className="pt-12 lg:pt-0">
             <PositivusLogo
               color1="fill-white"
-              className="mx-auto w-auto h-6 lg:h-7"
+              className="mx-auto h-6 w-auto lg:h-7"
             />
           </div>
-          <ul className="flex flex-col lg:flex-row items-center gap-3 lg:gap-10 my-9 lg:my-0 text-white lg:text-lg">
+          <ul className="my-9 flex flex-col items-center gap-3 text-white lg:my-0 lg:flex-row lg:gap-10 lg:text-lg">
             <li>About us</li>
             <li>Services</li>
             <li>Use Cases</li>
             <li>Pricing</li>
           </ul>
-          <ul className="flex justify-center gap-5 my-9 lg:my-0">
+          <ul className="my-9 flex justify-center gap-5 lg:my-0">
             <li>
               <LinkedInIcon className="w-7" />
             </li>
@@ -34,14 +34,14 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="lg:flex lg:justify-between lg:items-center lg:mt-16 lg:mb-12">
+        <div className="lg:mb-12 lg:mt-16 lg:flex lg:items-center lg:justify-between">
           <div>
             <div className="text-center lg:text-start">
-              <h4 className="inline-block bg-p-green px-1.5 rounded-lg text-h4-mob lg:text-h4 font-medium">
+              <h4 className="inline-block rounded-lg bg-p-green px-1.5 text-h4-mob font-medium lg:text-h4">
                 Contact us:
               </h4>
             </div>
-            <div className="flex flex-col gap-3.5 lg:gap-5 mt-9 lg:mt-7 text-center lg:text-start lg:text-lg text-white">
+            <div className="mt-9 flex flex-col gap-3.5 text-center text-white lg:mt-7 lg:gap-5 lg:text-start lg:text-lg">
               <p>Email: info@positivus.com</p>
               <p>Phone: 555-567-8901</p>
               <p>
@@ -53,16 +53,16 @@ export default function Footer() {
           </div>
           <Card
             border={false}
-            className="p-7 xl:px-10 xl:py-14 mt-9 lg:mt-0 bg-[#292A32] rounded-xl"
+            className="mt-9 rounded-xl bg-[#292A32] p-7 lg:mt-0 xl:px-10 xl:py-14"
           >
             <form
               action=""
-              className="flex flex-col xl:flex-row xl:items-center gap-5"
+              className="flex flex-col gap-5 xl:flex-row xl:items-center"
             >
               <input
                 type="text"
                 placeholder="Email"
-                className="w-full py-4 px-5 rounded-xl block border border-white bg-[#292A32] text-white lg:text-lg outline-white"
+                className="block w-full rounded-xl border border-white bg-[#292A32] px-5 py-4 text-white outline-white lg:text-lg"
                 required
               />
               <Button className="bg-p-green !text-black lg:text-xl">
@@ -71,7 +71,7 @@ export default function Footer() {
             </form>
           </Card>
         </div>
-        <ul className="flex lg:hidden justify-center gap-5 my-9">
+        <ul className="my-9 flex justify-center gap-5 lg:hidden">
           <li>
             <LinkedInIcon className="w-7" />
           </li>
@@ -82,7 +82,7 @@ export default function Footer() {
             <TwitterIcon className="w-7" />
           </li>
         </ul>
-        <div className="flex flex-col lg:flex-row gap-3.5 lg:gap-10 pt-9 lg:pt-12 pb-7 lg:p-0 border-t border-white text-center lg:text-lg text-white">
+        <div className="flex flex-col gap-3.5 border-t border-white pb-7 pt-9 text-center text-white lg:flex-row lg:gap-10 lg:p-0 lg:pt-12 lg:text-lg">
           <p>© 2023 Positivus. All Rights Reserved.</p>
           <p>Privacy Policy</p>
         </div>

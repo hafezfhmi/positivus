@@ -8,7 +8,7 @@ const logoGroupCombined = [...logoGroup1, ...logoGroup2];
 
 export default function LogoTicker() {
   return (
-    <section className="flex flex-col gap-5 mt-16 lg:mt-24 overflow-hidden">
+    <section className="mt-16 flex flex-col gap-5 overflow-hidden lg:mt-24">
       {/* Mobile ticker start */}
       <div className="flex">
         <motion.div
@@ -19,7 +19,7 @@ export default function LogoTicker() {
             duration: 60,
             ease: "linear",
           }}
-          className="flex flex-none md:hidden items-center gap-9 pr-9 -translate-x-1/2"
+          className="flex flex-none -translate-x-1/2 items-center gap-9 pr-9 md:hidden"
         >
           {[...new Array(4)].fill(0).map((_, index) => (
             <Fragment key={index}>
@@ -30,7 +30,7 @@ export default function LogoTicker() {
                   key={logo}
                   width={124}
                   height={48}
-                  className="w-auto h-12 grayscale"
+                  className="h-12 w-auto grayscale"
                 />
               ))}
             </Fragment>
@@ -46,7 +46,7 @@ export default function LogoTicker() {
             duration: 60,
             ease: "linear",
           }}
-          className="flex flex-none md:hidden items-center gap-9 pr-9"
+          className="flex flex-none items-center gap-9 pr-9 md:hidden"
         >
           {[...new Array(4)].fill(0).map((_, index) => (
             <Fragment key={index}>
@@ -57,7 +57,7 @@ export default function LogoTicker() {
                   key={logo}
                   width={124}
                   height={48}
-                  className="w-auto h-12 grayscale"
+                  className="h-12 w-auto grayscale"
                 />
               ))}
             </Fragment>
@@ -75,7 +75,7 @@ export default function LogoTicker() {
             duration: 60,
             ease: "linear",
           }}
-          className="hidden flex-none md:flex items-center gap-24 pr-24"
+          className="hidden flex-none items-center gap-24 pr-24 md:flex"
         >
           {[...new Array(4)].fill(0).map((_, index) => (
             <Fragment key={index}>
@@ -86,7 +86,7 @@ export default function LogoTicker() {
                   key={logo}
                   width={124}
                   height={48}
-                  className="w-auto h-12 grayscale"
+                  className="h-12 w-auto grayscale"
                 />
               ))}
             </Fragment>

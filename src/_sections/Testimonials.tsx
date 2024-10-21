@@ -45,26 +45,26 @@ function SlideSelector({ className }: slideSelectorProps) {
 export default function Testimonials() {
   return (
     <section className="container mt-16 lg:mt-24">
-      <div className="lg:flex lg:gap-10 text-center lg:text-start">
-        <h2 className="px-1.5 text-h2-mob lg:text-h2 lg:self-start font-medium bg-p-green inline rounded-md">
+      <div className="text-center lg:flex lg:gap-10 lg:text-start">
+        <h2 className="inline rounded-md bg-p-green px-1.5 text-h2-mob font-medium lg:self-start lg:text-h2">
           Testimonials
         </h2>
-        <p className="mt-7 lg:mt-0 leading-6 lg:text-lg lg:max-w-xl">
+        <p className="mt-7 leading-6 lg:mt-0 lg:max-w-xl lg:text-lg">
           Hear from Our Satisfied Clients: Read Our Testimonials{" "}
           <br className="hidden lg:inline" />
           to Learn More about Our Digital Marketing Services
         </p>
       </div>
-      <Card className="py-7 lg:pt-20 px-0 mt-10 lg:mt-20 bg-p-dark text-white overflow-hidden">
+      <Card className="mt-10 overflow-hidden bg-p-dark px-0 py-7 text-white lg:mt-20 lg:pt-20">
         <div className="px-7 lg:px-12">
-          <div className="grid auto-cols-[100%] lg:auto-cols-[50%] grid-flow-col gap-7 lg:gap-12">
+          <div className="grid auto-cols-[100%] grid-flow-col gap-7 lg:auto-cols-[50%] lg:gap-12">
             {testimonials.map((testimonial, index) => (
               <div key={index}>
-                <p className="relative border border-p-green p-7 lg:p-12 rounded-[2.8125rem] leading-6 lg:leading-normal lg:text-lg after:absolute after:left-12 after:bottom-0 after:translate-y-1/2 after:rotate-45 after:w-9 after:h-9 after:border-b after:border-r after:border-p-green after:bg-p-dark">
+                <p className="relative rounded-[2.8125rem] border border-p-green p-7 leading-6 after:absolute after:bottom-0 after:left-12 after:h-9 after:w-9 after:translate-y-1/2 after:rotate-45 after:border-b after:border-r after:border-p-green after:bg-p-dark lg:p-12 lg:text-lg lg:leading-normal">
                   {testimonial.testimonial}
                 </p>
                 <div className="ml-16 mt-10">
-                  <p className="font-medium text-p-green text-lg lg:text-h4">
+                  <p className="text-lg font-medium text-p-green lg:text-h4">
                     {testimonial.author}
                   </p>
                   <p className="lg:text-lg">{testimonial.title}</p>
@@ -73,7 +73,7 @@ export default function Testimonials() {
             ))}
           </div>
         </div>
-        <div className="flex justify-between items-center lg:max-w-[35.25rem] px-7 mt-14 mx-auto lg:mt-28 mb-7 lg:mb-10">
+        <div className="mx-auto mb-7 mt-14 flex items-center justify-between px-7 lg:mb-10 lg:mt-28 lg:max-w-[35.25rem]">
           <button>
             <Arrow className="w-5 rotate-180" />
           </button>

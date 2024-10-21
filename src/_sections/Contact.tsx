@@ -5,11 +5,11 @@ import Image from "next/image";
 export default function Contact() {
   return (
     <section className="container mt-16 lg:mt-24">
-      <div className="lg:flex lg:gap-10 text-center lg:text-start">
-        <h2 className="px-1.5 text-h2-mob lg:text-h2 lg:self-start font-medium bg-p-green inline rounded-md">
+      <div className="text-center lg:flex lg:gap-10 lg:text-start">
+        <h2 className="inline rounded-md bg-p-green px-1.5 text-h2-mob font-medium lg:self-start lg:text-h2">
           Contact Us
         </h2>
-        <p className="mt-7 lg:mt-0 leading-6 lg:text-lg lg:max-w-xl">
+        <p className="mt-7 leading-6 lg:mt-0 lg:max-w-xl lg:text-lg">
           Connect with Us: Let&apos;s Discuss Your{" "}
           <br className="hidden lg:inline" /> Digital Marketing Needs
         </p>
@@ -18,16 +18,16 @@ export default function Contact() {
       <form action="">
         <Card
           border={false}
-          className="relative bg-p-grey py-10 lg:py-14 px-7 lg:px-24 mt-10 lg:mt-20 overflow-hidden"
+          className="relative mt-10 overflow-hidden bg-p-grey px-7 py-10 lg:mt-20 lg:px-24 lg:py-14"
         >
           <div className="lg:max-w-[34.75rem]">
-            <div className="flex justify-between sm:justify-normal sm:gap-9 items-center pb-10 px-5 sm:px-0">
+            <div className="flex items-center justify-between px-5 pb-10 sm:justify-normal sm:gap-9 sm:px-0">
               <div className="flex items-center gap-3.5">
                 <input
                   type="radio"
                   id="hi"
                   name="contact"
-                  className="relative appearance-none w-7 h-7 border border-black rounded-full shrink-0 outline-none focus:ring-2 focus:ring-p-dark before:absolute before:w-4 before:h-4 before:rounded-full before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2 checked:before:bg-p-green focus:before:bg-p-green"
+                  className="relative h-7 w-7 shrink-0 appearance-none rounded-full border border-black outline-none before:absolute before:left-1/2 before:top-1/2 before:h-4 before:w-4 before:-translate-x-1/2 before:-translate-y-1/2 before:transform before:rounded-full checked:before:bg-p-green focus:ring-2 focus:ring-p-dark focus:before:bg-p-green"
                   defaultChecked
                 />
                 <label htmlFor="hi">Say Hi</label>
@@ -37,7 +37,7 @@ export default function Contact() {
                   type="radio"
                   id="quote"
                   name="contact"
-                  className="relative appearance-none w-7 h-7 border border-black rounded-full shrink-0 outline-none focus:ring-2 focus:ring-p-dark before:absolute before:w-4 before:h-4 before:rounded-full before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2 checked:before:bg-p-green focus:before:bg-p-green"
+                  className="relative h-7 w-7 shrink-0 appearance-none rounded-full border border-black outline-none before:absolute before:left-1/2 before:top-1/2 before:h-4 before:w-4 before:-translate-x-1/2 before:-translate-y-1/2 before:transform before:rounded-full checked:before:bg-p-green focus:ring-2 focus:ring-p-dark focus:before:bg-p-green"
                 />
                 <label htmlFor="quote">Get a Quote</label>
               </div>
@@ -51,7 +51,7 @@ export default function Contact() {
                   type="text"
                   id="name"
                   placeholder="Name"
-                  className="w-full py-4 px-5 mt-2.5 rounded-xl block border border-black outline-p-dark"
+                  className="mt-2.5 block w-full rounded-xl border border-black px-5 py-4 outline-p-dark"
                 />
               </div>
               <div>
@@ -62,7 +62,7 @@ export default function Contact() {
                   type="text"
                   id="email"
                   placeholder="Email"
-                  className="w-full py-4 px-5 mt-2.5 rounded-xl block border border-black outline-p-dark"
+                  className="mt-2.5 block w-full rounded-xl border border-black px-5 py-4 outline-p-dark"
                   required
                 />
               </div>
@@ -74,7 +74,7 @@ export default function Contact() {
                   id="message"
                   placeholder="Message"
                   rows={4}
-                  className="w-full py-4 px-5 mt-2.5 rounded-xl block border border-black outline-p-dark"
+                  className="mt-2.5 block w-full rounded-xl border border-black px-5 py-4 outline-p-dark"
                   required
                 />
               </div>
@@ -86,7 +86,7 @@ export default function Contact() {
             alt=""
             width={690}
             height={600}
-            className="hidden lg:block lg:h-[25rem] xl:h-[37.5rem] w-auto absolute top-1/2 -right-0 translate-x-1/2 -translate-y-1/2"
+            className="absolute -right-0 top-1/2 hidden w-auto -translate-y-1/2 translate-x-1/2 lg:block lg:h-[25rem] xl:h-[37.5rem]"
           />
         </Card>
       </form>

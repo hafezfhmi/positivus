@@ -52,31 +52,31 @@ const teamMembers = [
 export default function Team() {
   return (
     <section className="container mt-16 lg:mt-36">
-      <div className="lg:flex lg:gap-10 text-center lg:text-start">
-        <h2 className="px-1.5 text-h2-mob lg:text-h2 lg:self-start font-medium bg-p-green inline rounded-md">
+      <div className="text-center lg:flex lg:gap-10 lg:text-start">
+        <h2 className="inline rounded-md bg-p-green px-1.5 text-h2-mob font-medium lg:self-start lg:text-h2">
           Teams
         </h2>
-        <p className="mt-7 lg:mt-0 leading-6 lg:text-lg lg:max-w-xl">
+        <p className="mt-7 leading-6 lg:mt-0 lg:max-w-xl lg:text-lg">
           Meet the skilled and experienced team behind our{" "}
           <br className="hidden lg:inline" />
           successful digital marketing strategies
         </p>
       </div>
-      <div className="grid xl:grid-cols-3 gap-7 mt-10 lg:mt-20">
+      <div className="mt-10 grid gap-7 lg:mt-20 xl:grid-cols-3">
         {teamMembers.map((teamMember, index) => (
           <Card
             key={teamMember.name}
-            className={`py-10 px-12 xl:px-9 ${index >= 4 && "hidden xl:block"}`}
+            className={`px-12 py-10 xl:px-9 ${index >= 4 && "hidden xl:block"}`}
           >
-            <div className="flex items-end gap-5 relative pb-5 xl:pb-7">
+            <div className="relative flex items-end gap-5 pb-5 xl:pb-7">
               <Image
                 src={`/${teamMember.image}`}
                 alt={teamMember.name}
                 width={105}
                 height={102}
-                className="w-[6.5625rem] h-auto"
+                className="h-auto w-[6.5625rem]"
               />
-              <Link href="#" className="absolute top-0 right-0">
+              <Link href="#" className="absolute right-0 top-0">
                 <LinkedInIcon
                   color1="fill-black"
                   color2="fill-p-green"
@@ -84,22 +84,22 @@ export default function Team() {
                 />
               </Link>
               <div className="flex-1">
-                <h4 className="text-h4-mob xl:text-h4 font-medium">
+                <h4 className="text-h4-mob font-medium xl:text-h4">
                   {teamMember.name}
                 </h4>
-                <p className="leading-6 xl:leading-normal xl:text-lg">
+                <p className="leading-6 xl:text-lg xl:leading-normal">
                   {teamMember.title}
                 </p>
               </div>
             </div>
-            <p className="leading-6 xl:leading-normal xl:text-lg pt-5 xl:pt-7 border-t border-black">
+            <p className="border-t border-black pt-5 leading-6 xl:pt-7 xl:text-lg xl:leading-normal">
               {teamMember.description}
             </p>
           </Card>
         ))}
       </div>
       <div className="block xl:flex xl:justify-end">
-        <Button href="#" className="xl:w-auto mt-9 xl:mt-10 xl:px-20">
+        <Button href="#" className="mt-9 xl:mt-10 xl:w-auto xl:px-20">
           See all team
         </Button>
       </div>
