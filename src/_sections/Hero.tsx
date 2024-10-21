@@ -21,7 +21,9 @@ export default function Hero() {
           through a range of services including SEO, PPC, social media
           marketing, and content creation.
         </p>
-        <Button className="mt-10 md:mt-8 md:w-auto">Book a consultation</Button>
+        <Button className="mt-10 hover:bg-p-green hover:!text-black md:mt-8 hover:border hover:border-black md:w-auto">
+          Book a consultation
+        </Button>
       </div>
       <Image
         src="/hero-illustration.svg"
