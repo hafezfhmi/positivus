@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="container top-0 z-50 flex items-center justify-between bg-white py-7">
       <Link href="#">
-        <PositivusLogo className="h-6 w-36 xl:h-9 xl:w-52" />
+        <PositivusLogo className="h-6 w-auto xl:h-9 xl:w-52" />
       </Link>
       <button className="flex h-4 w-6 items-center lg:hidden">
         <span className="relative h-0.5 w-full bg-black before:absolute before:bottom-2 before:left-0 before:h-0.5 before:w-full before:bg-black before:content-[''] after:absolute after:left-0 after:top-2 after:h-0.5 after:w-full after:bg-black after:content-['']"></span>

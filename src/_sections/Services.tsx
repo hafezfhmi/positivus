@@ -48,10 +48,10 @@ export default function Services() {
   return (
     <section className="container mt-16 lg:mt-36">
       <div className="text-center lg:flex lg:gap-10 lg:text-start">
-        <h2 className="inline rounded-md bg-p-green px-1.5 text-h2-mob font-medium lg:self-start lg:text-h2">
+        <h2 className="inline rounded-md bg-p-green px-1.5 text-h2-mob font-medium lg:self-start xl:text-h2">
           Services
         </h2>
-        <p className="mt-7 leading-6 lg:mt-0 lg:max-w-xl lg:text-lg">
+        <p className="mt-7 leading-6 lg:mt-0 lg:max-w-xl xl:text-lg">
           At our digital marketing agency, we offer a range of services to{" "}
           <br className="hidden lg:inline" />
           help businesses grow and succeed online. These services include:
@@ -66,12 +66,12 @@ export default function Services() {
               <div>
                 <div className="inline-flex flex-col">
                   <h3
-                    className={`self-start px-1.5 text-h3-mob font-medium lg:text-h3 ${determineTextBackground(index)} rounded-md`}
+                    className={`self-start px-1.5 text-h3-mob font-medium xl:text-h3 ${determineTextBackground(index)} rounded-md`}
                   >
                     {service.line1}
                   </h3>
                   <h3
-                    className={`self-start px-[0.43rem] text-h3-mob font-medium lg:text-h3 ${index === 0 || index % 3 === 0 ? "bg-p-green" : "bg-white"} rounded-md`}
+                    className={`self-start px-[0.43rem] text-h3-mob font-medium xl:text-h3 ${index === 0 || index % 3 === 0 ? "bg-p-green" : "bg-white"} rounded-md`}
                   >
                     {service.line2}
                   </h3>

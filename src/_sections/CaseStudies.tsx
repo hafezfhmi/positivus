@@ -7,10 +7,10 @@ export default function CaseStudies() {
     <section className="mt-16 overflow-hidden lg:mt-36">
       <div className="container">
         <div className="px-5 text-center lg:flex lg:gap-10 lg:text-start">
-          <h2 className="inline rounded-md bg-p-green px-1.5 text-h2-mob font-medium lg:self-start lg:text-h2">
+          <h2 className="inline rounded-md bg-p-green px-1.5 text-h2-mob font-medium lg:self-start xl:text-h2">
             Case Studies
           </h2>
-          <p className="mt-7 leading-6 lg:mt-0 lg:max-w-xl lg:text-lg">
+          <p className="mt-7 leading-6 lg:mt-0 lg:max-w-xl xl:text-lg">
             Explore Real-Life Examples of Our Proven Digital Marketing{" "}
             <br className="hidden lg:inline" />
             Success through Our Case Studies

@@ -6,10 +6,10 @@ export default function Contact() {
   return (
     <section className="container mt-16 lg:mt-24">
       <div className="text-center lg:flex lg:gap-10 lg:text-start">
-        <h2 className="inline rounded-md bg-p-green px-1.5 text-h2-mob font-medium lg:self-start lg:text-h2">
+        <h2 className="inline rounded-md bg-p-green px-1.5 text-h2-mob font-medium lg:self-start xl:text-h2">
           Contact Us
         </h2>
-        <p className="mt-7 leading-6 lg:mt-0 lg:max-w-xl lg:text-lg">
+        <p className="mt-7 leading-6 lg:mt-0 lg:max-w-xl xl:text-lg">
           Connect with Us: Let&apos;s Discuss Your{" "}
           <br className="hidden lg:inline" /> Digital Marketing Needs
         </p>
@@ -30,7 +30,9 @@ export default function Contact() {
                   className="relative h-7 w-7 shrink-0 appearance-none rounded-full border border-black outline-none before:absolute before:left-1/2 before:top-1/2 before:h-4 before:w-4 before:-translate-x-1/2 before:-translate-y-1/2 before:transform before:rounded-full checked:before:bg-p-green focus:ring-2 focus:ring-p-dark focus:before:bg-p-green"
                   defaultChecked
                 />
-                <label htmlFor="hi">Say Hi</label>
+                <label htmlFor="hi" className="xl:text-lg">
+                  Say Hi
+                </label>
               </div>
               <div className="flex items-center gap-3.5">
                 <input
@@ -39,7 +41,9 @@ export default function Contact() {
                   name="contact"
                   className="relative h-7 w-7 shrink-0 appearance-none rounded-full border border-black outline-none before:absolute before:left-1/2 before:top-1/2 before:h-4 before:w-4 before:-translate-x-1/2 before:-translate-y-1/2 before:transform before:rounded-full checked:before:bg-p-green focus:ring-2 focus:ring-p-dark focus:before:bg-p-green"
                 />
-                <label htmlFor="quote">Get a Quote</label>
+                <label htmlFor="quote" className="xl:text-lg">
+                  Get a Quote
+                </label>
               </div>
             </div>
             <div className="flex flex-col gap-5">

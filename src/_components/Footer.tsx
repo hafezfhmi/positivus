@@ -16,7 +16,7 @@ export default function Footer() {
               className="mx-auto h-6 w-auto lg:h-7"
             />
           </div>
-          <ul className="my-9 flex flex-col items-center gap-3 text-white lg:my-0 lg:flex-row lg:gap-10 lg:text-lg">
+          <ul className="my-9 flex flex-col items-center gap-3 text-white lg:my-0 lg:flex-row lg:gap-10 xl:text-lg">
             <li>About us</li>
             <li>Services</li>
             <li>Use Cases</li>
@@ -37,11 +37,11 @@ export default function Footer() {
         <div className="lg:mb-12 lg:mt-16 lg:flex lg:items-center lg:justify-between">
           <div>
             <div className="text-center lg:text-start">
-              <h4 className="inline-block rounded-lg bg-p-green px-1.5 text-h4-mob font-medium lg:text-h4">
+              <h4 className="inline-block rounded-lg bg-p-green px-1.5 text-h4-mob font-medium xl:text-h4">
                 Contact us:
               </h4>
             </div>
-            <div className="mt-9 flex flex-col gap-3.5 text-center text-white lg:mt-7 lg:gap-5 lg:text-start lg:text-lg">
+            <div className="mt-9 flex flex-col gap-3.5 text-center text-white lg:mt-7 lg:gap-5 lg:text-start xl:text-lg">
               <p>Email: info@positivus.com</p>
               <p>Phone: 555-567-8901</p>
               <p>
@@ -62,10 +62,10 @@ export default function Footer() {
               <input
                 type="text"
                 placeholder="Email"
-                className="block w-full rounded-xl border border-white bg-[#292A32] px-5 py-4 text-white outline-white lg:text-lg"
+                className="block w-full rounded-xl border border-white bg-[#292A32] px-5 py-4 text-white outline-white xl:text-lg"
                 required
               />
-              <Button className="bg-p-green !text-black lg:text-xl">
+              <Button className="bg-p-green !text-black xl:text-xl">
                 Subscribe to News
               </Button>
             </form>
@@ -82,7 +82,7 @@ export default function Footer() {
             <TwitterIcon className="w-7" />
           </li>
         </ul>
-        <div className="flex flex-col gap-3.5 border-t border-white pb-7 pt-9 text-center text-white lg:flex-row lg:gap-10 lg:p-0 lg:pt-12 lg:text-lg">
+        <div className="flex flex-col gap-3.5 border-t border-white pb-7 pt-9 text-center text-white lg:flex-row lg:gap-10 lg:p-0 lg:pt-12 xl:text-lg">
           <p>© 2023 Positivus. All Rights Reserved.</p>
           <p>Privacy Policy</p>
         </div>

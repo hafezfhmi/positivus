@@ -45,11 +45,11 @@ function SlideSelector({ className }: slideSelectorProps) {
 export default function Testimonials() {
   return (
     <section className="container mt-16 lg:mt-24">
-      <div className="text-center lg:flex lg:gap-10 lg:text-start">
-        <h2 className="inline rounded-md bg-p-green px-1.5 text-h2-mob font-medium lg:self-start lg:text-h2">
+      <div className="text-center lg:flex lg:gap-10 xl:text-start">
+        <h2 className="inline rounded-md bg-p-green px-1.5 text-h2-mob font-medium lg:self-start xl:text-h2">
           Testimonials
         </h2>
-        <p className="mt-7 leading-6 lg:mt-0 lg:max-w-xl lg:text-lg">
+        <p className="mt-7 leading-6 lg:mt-0 lg:max-w-xl xl:text-lg">
           Hear from Our Satisfied Clients: Read Our Testimonials{" "}
           <br className="hidden lg:inline" />
           to Learn More about Our Digital Marketing Services
@@ -60,14 +60,14 @@ export default function Testimonials() {
           <div className="grid auto-cols-[100%] grid-flow-col gap-7 lg:auto-cols-[50%] lg:gap-12">
             {testimonials.map((testimonial, index) => (
               <div key={index}>
-                <p className="relative rounded-[2.8125rem] border border-p-green p-7 leading-6 after:absolute after:bottom-0 after:left-12 after:h-9 after:w-9 after:translate-y-1/2 after:rotate-45 after:border-b after:border-r after:border-p-green after:bg-p-dark lg:p-12 lg:text-lg lg:leading-normal">
+                <p className="relative rounded-[2.8125rem] border border-p-green p-7 leading-6 after:absolute after:bottom-0 after:left-12 after:h-9 after:w-9 after:translate-y-1/2 after:rotate-45 after:border-b after:border-r after:border-p-green after:bg-p-dark lg:p-12 lg:leading-normal xl:text-lg">
                   {testimonial.testimonial}
                 </p>
                 <div className="ml-16 mt-10">
-                  <p className="text-lg font-medium text-p-green lg:text-h4">
+                  <p className="text-lg font-medium text-p-green xl:text-h4">
                     {testimonial.author}
                   </p>
-                  <p className="lg:text-lg">{testimonial.title}</p>
+                  <p className="xl:text-lg">{testimonial.title}</p>
                 </div>
               </div>
             ))}

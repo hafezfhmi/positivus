@@ -10,10 +10,10 @@ export default function Proposal() {
         border={false}
       >
         <div>
-          <h3 className="text-h3-mob font-medium lg:text-h3">
+          <h3 className="text-h3-mob font-medium xl:text-h3">
             Let’s make things happen
           </h3>
-          <p className="mt-5 leading-6 lg:mt-6 lg:text-lg">
+          <p className="mt-5 leading-6 lg:mt-6 xl:text-lg">
             Contact us today to learn more about how our digital marketing
             services can help your business grow and succeed online.
           </p>
