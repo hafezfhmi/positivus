@@ -61,7 +61,7 @@ export default function Services() {
         {services.map((service, index) => (
           <Link href="#" key={service.line1}>
             <Card
-              className={`duration-75 hover:-translate-y-2 hover:shadow-[0px_0.75rem_#191A23] xl:grid xl:h-full xl:grid-cols-2 xl:gap-16 ${determineContainerBackground(index)}`}
+              className={`group duration-75 hover:-translate-y-2 hover:shadow-[0px_0.75rem_#191A23] xl:grid xl:h-full xl:grid-cols-2 xl:gap-16 ${determineContainerBackground(index)}`}
             >
               <div>
                 <div className="inline-flex flex-col">
@@ -87,7 +87,7 @@ export default function Services() {
                       className={`h-10 w-10 -rotate-[30deg] rounded-full p-2 ${determineArrowColor(index) === "normal" ? "bg-black" : "bg-white"}`}
                     />
                     <p
-                      className={`hidden text-xl xl:block ${determineArrowColor(index) === "normal" ? "text-black" : "text-white"}`}
+                      className={`hidden text-xl group-hover:border-b-2 xl:block ${determineArrowColor(index) === "normal" ? "text-black group-hover:border-black" : "text-white group-hover:border-white"}`}
                     >
                       Learn more
                     </p>
