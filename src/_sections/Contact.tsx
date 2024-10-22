@@ -27,10 +27,10 @@ export default function Contact() {
                   type="radio"
                   id="hi"
                   name="contact"
-                  className="relative h-7 w-7 shrink-0 appearance-none rounded-full border border-black outline-none before:absolute before:left-1/2 before:top-1/2 before:h-4 before:w-4 before:-translate-x-1/2 before:-translate-y-1/2 before:transform before:rounded-full checked:before:bg-p-green focus:ring-2 focus:ring-p-dark focus:before:bg-p-green"
+                  className="relative h-7 w-7 shrink-0 cursor-pointer appearance-none rounded-full border border-black outline-none before:absolute before:left-1/2 before:top-1/2 before:h-4 before:w-4 before:-translate-x-1/2 before:-translate-y-1/2 before:transform before:rounded-full checked:before:bg-p-green focus:ring-2 focus:ring-p-dark focus:before:bg-p-green"
                   defaultChecked
                 />
-                <label htmlFor="hi" className="xl:text-lg">
+                <label htmlFor="hi" className="cursor-pointer xl:text-lg">
                   Say Hi
                 </label>
               </div>
@@ -39,9 +39,9 @@ export default function Contact() {
                   type="radio"
                   id="quote"
                   name="contact"
-                  className="relative h-7 w-7 shrink-0 appearance-none rounded-full border border-black outline-none before:absolute before:left-1/2 before:top-1/2 before:h-4 before:w-4 before:-translate-x-1/2 before:-translate-y-1/2 before:transform before:rounded-full checked:before:bg-p-green focus:ring-2 focus:ring-p-dark focus:before:bg-p-green"
+                  className="relative h-7 w-7 shrink-0 cursor-pointer appearance-none rounded-full border border-black outline-none before:absolute before:left-1/2 before:top-1/2 before:h-4 before:w-4 before:-translate-x-1/2 before:-translate-y-1/2 before:transform before:rounded-full checked:before:bg-p-green focus:ring-2 focus:ring-p-dark focus:before:bg-p-green"
                 />
-                <label htmlFor="quote" className="xl:text-lg">
+                <label htmlFor="quote" className="cursor-pointer xl:text-lg">
                   Get a Quote
                 </label>
               </div>
@@ -82,7 +82,9 @@ export default function Contact() {
                   required
                 />
               </div>
-              <Button className="mt-5">Send Message</Button>
+              <Button className="mt-5 hover:border hover:border-black hover:bg-p-green hover:!text-black">
+                Send Message
+              </Button>
             </div>
           </div>
           <Image
