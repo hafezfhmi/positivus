@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "@/_components/Button";
 import Card from "@/_components/Card";
 import FacebookIcon from "@/_components/FacebookIcon";
@@ -11,26 +12,51 @@ export default function Footer() {
       <div className="container lg:rounded-t-[2.8125rem] lg:bg-p-dark lg:p-14">
         <div className="lg:flex lg:items-end lg:justify-between">
           <div className="pt-12 lg:pt-0">
-            <PositivusLogo
-              color1="fill-white"
-              className="mx-auto h-6 w-auto lg:h-7"
-            />
+            <Link href="#">
+              <PositivusLogo
+                color1="fill-white"
+                className="mx-auto h-6 w-auto cursor-pointer lg:h-7"
+              />
+            </Link>
           </div>
           <ul className="my-9 flex flex-col items-center gap-3 text-white lg:my-0 lg:flex-row lg:gap-10 xl:text-lg">
-            <li>About us</li>
-            <li>Services</li>
-            <li>Use Cases</li>
-            <li>Pricing</li>
+            <Link href="#" className="hover:text-p-green">
+              <li>About us</li>
+            </Link>
+            <Link href="#" className="hover:text-p-green">
+              <li>Services</li>
+            </Link>
+            <Link href="#" className="hover:text-p-green">
+              <li>Use Cases</li>
+            </Link>
+            <Link href="#" className="hover:text-p-green">
+              <li>Pricing</li>
+            </Link>
           </ul>
-          <ul className="my-9 flex justify-center gap-5 lg:my-0">
+          <ul className="my-9 hidden justify-center gap-5 lg:my-0 lg:flex">
             <li>
-              <LinkedInIcon className="w-7" />
+              <Link href="#">
+                <LinkedInIcon
+                  className="group w-7 cursor-pointer"
+                  color1="fill-white group-hover:fill-p-green"
+                />
+              </Link>
             </li>
             <li>
-              <FacebookIcon className="w-7" />
+              <Link href="#">
+                <FacebookIcon
+                  className="group w-7 cursor-pointer"
+                  color1="fill-white group-hover:fill-p-green"
+                />
+              </Link>
             </li>
             <li>
-              <TwitterIcon className="w-7" />
+              <Link href="#">
+                <TwitterIcon
+                  className="group w-7 cursor-pointer"
+                  color1="fill-white group-hover:fill-p-green"
+                />
+              </Link>
             </li>
           </ul>
         </div>
@@ -65,7 +91,7 @@ export default function Footer() {
                 className="block w-full rounded-xl border border-white bg-[#292A32] px-5 py-4 text-white outline-white xl:text-lg"
                 required
               />
-              <Button className="bg-p-green !text-black xl:text-xl">
+              <Button className="border-p-green bg-p-green !text-black hover:border-p-dark hover:bg-p-dark hover:!text-white xl:text-xl">
                 Subscribe to News
               </Button>
             </form>
@@ -73,18 +99,35 @@ export default function Footer() {
         </div>
         <ul className="my-9 flex justify-center gap-5 lg:hidden">
           <li>
-            <LinkedInIcon className="w-7" />
+            <Link href="#">
+              <LinkedInIcon
+                className="group w-7 cursor-pointer"
+                color1="fill-white group-hover:fill-p-green"
+              />
+            </Link>
           </li>
           <li>
-            <FacebookIcon className="w-7" />
+            <Link href="#">
+              <FacebookIcon
+                className="group w-7 cursor-pointer"
+                color1="fill-white group-hover:fill-p-green"
+              />
+            </Link>
           </li>
           <li>
-            <TwitterIcon className="w-7" />
+            <Link href="#">
+              <TwitterIcon
+                className="group w-7 cursor-pointer"
+                color1="fill-white group-hover:fill-p-green"
+              />
+            </Link>
           </li>
         </ul>
         <div className="flex flex-col gap-3.5 border-t border-white pb-7 pt-9 text-center text-white lg:flex-row lg:gap-10 lg:p-0 lg:pt-12 xl:text-lg">
           <p>© 2023 Positivus. All Rights Reserved.</p>
-          <p>Privacy Policy</p>
+          <Link href="#">
+            <p className="hover:text-p-green">Privacy Policy</p>
+          </Link>
         </div>
       </div>
     </footer>
