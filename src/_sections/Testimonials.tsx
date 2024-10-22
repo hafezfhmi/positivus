@@ -3,6 +3,7 @@ import Card from "@/_components/Card";
 
 type slideSelectorProps = {
   className?: string;
+  color1?: string;
 };
 
 const testimonials = [
@@ -26,7 +27,10 @@ const testimonials = [
   },
 ];
 
-function SlideSelector({ className }: slideSelectorProps) {
+function SlideSelector({
+  className,
+  color1 = "fill-white",
+}: slideSelectorProps) {
   return (
     <svg
       viewBox="0 0 14 14"
@@ -36,7 +40,7 @@ function SlideSelector({ className }: slideSelectorProps) {
     >
       <path
         d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z"
-        fill="white"
+        className={color1}
       />
     </svg>
   );
@@ -75,27 +79,48 @@ export default function Testimonials() {
         </div>
         <div className="mx-auto mb-7 mt-14 flex items-center justify-between px-7 lg:mb-10 lg:mt-28 lg:max-w-[35.25rem]">
           <button>
-            <Arrow className="w-5 rotate-180" />
+            <Arrow
+              className="group w-5 rotate-180"
+              color1="fill-white group-hover:fill-p-green"
+            />
           </button>
           <div className="flex gap-5">
             <button>
-              <SlideSelector />
+              <SlideSelector
+                className="group"
+                color1="fill-white group-hover:fill-p-green"
+              />
             </button>
             <button>
-              <SlideSelector />
+              <SlideSelector
+                className="group"
+                color1="fill-white group-hover:fill-p-green"
+              />
             </button>
             <button>
-              <SlideSelector />
+              <SlideSelector
+                className="group"
+                color1="fill-white group-hover:fill-p-green"
+              />
             </button>
             <button>
-              <SlideSelector />
+              <SlideSelector
+                className="group"
+                color1="fill-white group-hover:fill-p-green"
+              />
             </button>
             <button>
-              <SlideSelector />
+              <SlideSelector
+                className="group"
+                color1="fill-white group-hover:fill-p-green"
+              />
             </button>
           </div>
           <button>
-            <Arrow className="w-5" />
+            <Arrow
+              className="group w-5"
+              color1="fill-white group-hover:fill-p-green"
+            />
           </button>
         </div>
       </Card>
