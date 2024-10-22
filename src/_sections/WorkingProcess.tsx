@@ -58,7 +58,7 @@ function AccordionItem({
         className="flex w-full items-center justify-between gap-7 py-7 lg:py-10"
         onClick={onClick}
       >
-        <p className="text-3xl font-medium xl:text-6xl">0{index + 1}</p>
+        <span className="text-3xl font-medium xl:text-6xl">0{index + 1}</span>
         <h4 className="flex-1 text-start text-h4-mob font-medium xl:text-3xl">
           {process.title}
         </h4>
