@@ -52,18 +52,18 @@ function AccordionItem({
 }: accordionItemProps) {
   return (
     <Card className="cursor-pointer p-0 px-7 lg:px-14">
-      <div
-        className="flex items-center justify-between gap-7 py-7 lg:py-10"
+      <button
+        className="flex w-full items-center justify-between gap-7 py-7 lg:py-10"
         onClick={onClick}
       >
         <p className="text-3xl font-medium xl:text-6xl">0{index + 1}</p>
-        <h4 className="flex-1 text-h4-mob font-medium xl:text-3xl">
+        <h4 className="flex-1 text-start text-h4-mob font-medium xl:text-3xl">
           {process.title}
         </h4>
         <div className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-full border border-black lg:h-14 lg:w-14">
           <Plus />
         </div>
-      </div>
+      </button>
       <div
         className={`max-h-0 overflow-hidden border-t border-p-dark transition-all ${isActive && "max-h-96 py-7 lg:py-10"}`}
       >
