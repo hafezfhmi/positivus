@@ -66,7 +66,7 @@ export default function Team() {
         {teamMembers.map((teamMember, index) => (
           <Card
             key={teamMember.name}
-            className={`px-12 py-10 xl:px-9 ${index >= 4 && "hidden xl:block"}`}
+            className={`px-12 py-10 hover:-translate-y-2 hover:shadow-[0px_0.75rem_#191A23] xl:px-9 ${index >= 4 && "hidden xl:block"}`}
           >
             <div className="relative flex items-end gap-5 pb-5 xl:pb-7">
               <Image
@@ -99,7 +99,10 @@ export default function Team() {
         ))}
       </div>
       <div className="block xl:flex xl:justify-end">
-        <Button href="#" className="mt-9 xl:mt-10 xl:w-auto xl:px-20">
+        <Button
+          href="#"
+          className="mt-9 hover:border hover:border-black hover:bg-p-green hover:!text-black xl:mt-10 xl:w-auto xl:px-20"
+        >
           See all team
         </Button>
       </div>

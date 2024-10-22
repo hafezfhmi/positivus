@@ -61,7 +61,7 @@ export default function Services() {
         {services.map((service, index) => (
           <Link href="#" key={service.line1}>
             <Card
-              className={`group duration-75 hover:-translate-y-2 hover:shadow-[0px_0.75rem_#191A23] xl:grid xl:h-full xl:grid-cols-2 xl:gap-16 ${determineContainerBackground(index)}`}
+              className={`group hover:-translate-y-2 hover:shadow-[0px_0.75rem_#191A23] xl:grid xl:h-full xl:grid-cols-2 xl:gap-16 ${determineContainerBackground(index)}`}
             >
               <div>
                 <div className="inline-flex flex-col">
