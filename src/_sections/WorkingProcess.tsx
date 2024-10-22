@@ -26,7 +26,7 @@ export default function WorkingProcess() {
         {processList.map((process, index) => (
           <Card
             key={process}
-            className="flex w-full items-center justify-between gap-7 p-7 lg:px-14 lg:py-10"
+            className="flex w-full items-center justify-between gap-7 p-7 hover:cursor-pointer lg:px-14 lg:py-10"
           >
             <p className="text-3xl font-medium xl:text-6xl">0{index + 1}</p>
             <h4 className="flex-1 text-h4-mob font-medium xl:text-3xl">
