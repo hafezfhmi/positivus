@@ -52,7 +52,7 @@ function AccordionItem({
 }: accordionItemProps) {
   return (
     <Card
-      className={`cursor-pointer p-0 px-7 lg:px-14 ${isActive && "bg-p-green"}`}
+      className={`cursor-pointer !p-0 !px-7 lg:!px-14 ${isActive && "bg-p-green"}`}
     >
       <button
         className="flex w-full items-center justify-between gap-7 py-7 lg:py-10"
