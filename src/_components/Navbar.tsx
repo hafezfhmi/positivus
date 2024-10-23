@@ -3,10 +3,24 @@
 import Link from "next/link";
 import PositivusLogo from "./PositivusLogo";
 import Button from "./Button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function MobileNav() {
   const [showMobileNav, setShowMobileNav] = useState(false);
+
+  useEffect(() => {
+    const html = document.getElementsByTagName("html")[0];
+
+    if (showMobileNav) {
+      html.classList.add("overflow-hidden");
+    } else {
+      html.classList.remove("overflow-auto");
+    }
+
+    return () => {
+      html.classList.remove("overflow-hidden");
+    };
+  }, [showMobileNav]);
 
   const handleShowMobileNav = () => {
     setShowMobileNav((prevVal) => !prevVal);
@@ -27,7 +41,7 @@ function MobileNav() {
         ></span>
       </button>
       <nav
-        className={`fixed top-0 z-10 flex h-screen w-screen items-center justify-center bg-white transition-all lg:hidden ${showMobileNav ? "left-0" : "left-full"}`}
+        className={`fixed top-0 z-10 flex h-screen w-screen items-center justify-center overscroll-none bg-white transition-all lg:hidden ${showMobileNav ? "left-0" : "left-full"}`}
       >
         <ul className="container flex flex-col items-center justify-center gap-8 text-3xl">
           <li className="flex-shrink-0" onClick={handleClickNav}>
