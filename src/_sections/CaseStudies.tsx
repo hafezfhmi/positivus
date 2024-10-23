@@ -24,7 +24,7 @@ export default function CaseStudies() {
           </p>
           <Link
             href="#"
-            className="mt-5 inline-flex items-center gap-3.5 border-b-2 border-transparent text-xl text-p-green hover:border-p-green"
+            className="mt-5 inline-flex items-center gap-3.5 self-start border-b-2 border-transparent text-xl text-p-green hover:border-p-green"
           >
             Learn more
             <Arrow color1="fill-p-green" className="w-5 -rotate-[30deg]" />
@@ -38,7 +38,7 @@ export default function CaseStudies() {
           </p>
           <Link
             href="#"
-            className="mt-5 inline-flex items-center gap-3.5 border-b-2 border-transparent text-xl text-p-green hover:border-p-green"
+            className="mt-5 inline-flex items-center gap-3.5 self-start border-b-2 border-transparent text-xl text-p-green hover:border-p-green"
           >
             Learn more
             <Arrow color1="fill-p-green" className="w-5 -rotate-[30deg]" />
@@ -52,7 +52,7 @@ export default function CaseStudies() {
           </p>
           <Link
             href="#"
-            className="mt-5 inline-flex items-center gap-3.5 border-b-2 border-transparent text-xl text-p-green hover:border-p-green"
+            className="mt-5 inline-flex items-center gap-3.5 self-start border-b-2 border-transparent text-xl text-p-green hover:border-p-green"
           >
             Learn more
             <Arrow color1="fill-p-green" className="w-5 -rotate-[30deg]" />
