@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Arrow from "@/_components/Arrow";
 import Card from "@/_components/Card";
@@ -25,10 +25,10 @@ const SlideContainer = styled.div<{ $activeSlideIndex: number }>`
   );
 
   @media (min-width: 1024px) {
-    grid-auto-columns: 50%;
+    grid-auto-columns: calc(50% - 1.5rem);
     gap: 3rem /* 48px */;
     transform: translateX(
-      calc((-50% - 3rem) * ${(props) => props.$activeSlideIndex})
+      calc((-50% - 1.5rem) * ${(props) => props.$activeSlideIndex})
     );
   }
 `;
@@ -37,20 +37,20 @@ const testimonials = [
   {
     testimonial:
       '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
-    author: "John Smith1",
+    author: "John Smith",
     title: "Marketing Directory at XYZ Corp",
   },
   {
     testimonial:
-      '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
-    author: "John Smith2",
-    title: "Marketing Directory at XYZ Corp",
+      '"Positivus transformed our social media strategy, helping us engage with our audience more effectively and increasing our followers by 150%. Their insights and dedication to our brand’s growth have been invaluable. We couldn\'t be happier with the results."',
+    author: "Sarah Lee",
+    title: "Marketing Manager at Urban Threads",
   },
   {
     testimonial:
-      '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
-    author: "John Smith3",
-    title: "Marketing Directory at XYZ Corp",
+      '"Working with Positivus has been a game-changer for our business. Their expertise in SEO and PPC led to a 60% increase in qualified leads within just a few months. The team is knowledgeable, attentive, and goes above and beyond to meet our goals."',
+    author: "Michael Brown",
+    title: "CEO at Tech Innovators",
   },
 ];
 
@@ -76,6 +76,27 @@ function SlideSelector({
 export default function Testimonials() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
+  useEffect(() => {
+    const handleResizeWindow = () => {
+      if (
+        window.innerWidth >= 1024 &&
+        activeSlideIndex === testimonials.length - 1
+      ) {
+        setActiveSlideIndex(testimonials.length - 2);
+      }
+    };
+
+    window.addEventListener("resize", handleResizeWindow);
+
+    return () => {
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, [activeSlideIndex]);
+
+  const handleClickSelectorButton = (index: number) => {
+    setActiveSlideIndex(index);
+  };
+
   const handleClickSlideLeft = () => {
     if (activeSlideIndex === 0) {
       return;
@@ -84,7 +105,11 @@ export default function Testimonials() {
   };
 
   const handleClickSlideRight = () => {
-    if (activeSlideIndex === testimonials.length - 1) {
+    if (
+      activeSlideIndex === testimonials.length - 1 ||
+      (window.innerWidth >= 1024 &&
+        activeSlideIndex === testimonials.length - 2)
+    ) {
       return;
     }
     setActiveSlideIndex((prev) => prev + 1);
@@ -105,10 +130,9 @@ export default function Testimonials() {
       <Card className="mt-10 overflow-hidden bg-p-dark px-0 py-7 text-white lg:mt-20 lg:pt-20">
         <div className="px-7 lg:px-12">
           <SlideContainer $activeSlideIndex={activeSlideIndex}>
-            {/* TODO: update testimonial and update key here */}
-            {testimonials.map((testimonial, index) => (
-              <div key={index}>
-                <p className="relative rounded-[2.8125rem] border border-p-green p-7 leading-6 after:absolute after:bottom-0 after:left-12 after:h-9 after:w-9 after:translate-y-1/2 after:rotate-45 after:border-b after:border-r after:border-p-green after:bg-p-dark lg:p-12 lg:leading-normal xl:text-lg">
+            {testimonials.map((testimonial) => (
+              <div key={testimonial.author} className="flex flex-col">
+                <p className="relative flex-grow rounded-[2.8125rem] border border-p-green p-7 leading-6 after:absolute after:bottom-0 after:left-12 after:h-9 after:w-9 after:translate-y-1/2 after:rotate-45 after:border-b after:border-r after:border-p-green after:bg-p-dark lg:p-12 lg:leading-normal xl:text-lg">
                   {testimonial.testimonial}
                 </p>
                 <div className="ml-16 mt-10">
@@ -129,9 +153,14 @@ export default function Testimonials() {
             />
           </button>
           <div className="flex gap-5">
-            {/* TODO: update testimonial and update key here */}
-            {testimonials.map((_, index) => (
-              <button key={index}>
+            {testimonials.map((testimonial, index) => (
+              <button
+                key={testimonial.author}
+                className={`${index === testimonials.length - 1 && "lg:hidden"}`}
+                onClick={() => {
+                  handleClickSelectorButton(index);
+                }}
+              >
                 <SlideSelector
                   className="group"
                   color1={`fill-white group-hover:fill-p-green ${activeSlideIndex === index && "!fill-p-green"}`}
