@@ -8,8 +8,8 @@ import TwitterIcon from "@/_components/TwitterIcon";
 
 export default function Footer() {
   return (
-    <footer className="mt-[5.625rem] bg-p-dark lg:mt-36 lg:bg-transparent">
-      <div className="container lg:rounded-t-[2.8125rem] lg:bg-p-dark lg:p-14">
+    <footer className="mt-[5.625rem] bg-p-dark lg:container lg:mt-36 lg:bg-transparent">
+      <div className="lg:rounded-t-[2.8125rem] lg:bg-p-dark lg:p-14">
         <div className="lg:flex lg:items-end lg:justify-between">
           <div className="pt-12 lg:pt-0">
             <Link href="#">
