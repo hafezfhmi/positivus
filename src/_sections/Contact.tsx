@@ -63,7 +63,7 @@ export default function Contact() {
                   Email*
                 </label>
                 <input
-                  type="text"
+                  type="email"
                   id="email"
                   placeholder="Email"
                   className="mt-2.5 block w-full rounded-xl border border-black px-5 py-4 outline-p-dark"

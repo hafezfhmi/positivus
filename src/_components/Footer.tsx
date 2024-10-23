@@ -86,7 +86,7 @@ export default function Footer() {
               className="flex flex-col gap-5 xl:flex-row xl:items-center"
             >
               <input
-                type="text"
+                type="email"
                 placeholder="Email"
                 className="block w-full rounded-xl border border-white bg-[#292A32] px-5 py-4 text-white outline-white xl:text-lg"
                 required
