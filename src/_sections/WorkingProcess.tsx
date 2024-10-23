@@ -67,7 +67,7 @@ function AccordionItem({
         </div>
       </button>
       <div
-        className={`max-h-0 overflow-hidden border-t border-p-dark transition-all ${isActive && "max-h-96 py-7 lg:py-10"}`}
+        className={`max-h-0 overflow-hidden border-t border-p-dark transition-all xl:text-lg ${isActive && "max-h-96 py-7 lg:py-10"}`}
       >
         <p>{process.description}</p>
       </div>
