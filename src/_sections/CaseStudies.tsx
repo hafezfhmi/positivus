@@ -16,7 +16,7 @@ export default function CaseStudies() {
         </p>
       </div>
       <div className="auto-cols-1 mt-10 grid gap-7 lg:mt-20 lg:grid-cols-3 lg:gap-0 lg:rounded-[2.8125rem] lg:bg-p-dark lg:px-0 lg:py-16">
-        <Card className="bg-p-dark py-10 text-white lg:border-0 lg:px-16 lg:py-0">
+        <Card className="flex flex-col justify-between bg-p-dark py-10 text-white lg:border-0 lg:px-16 lg:py-0">
           <p className="leading-6 xl:text-lg">
             For a local restaurant, we implemented a targeted PPC campaign that
             resulted in a 50% increase in website traffic and a 25% increase in
@@ -30,11 +30,11 @@ export default function CaseStudies() {
             <Arrow color1="fill-p-green" className="w-5 -rotate-[30deg]" />
           </Link>
         </Card>
-        <Card className="bg-p-dark py-10 text-white lg:rounded-none lg:border-0 lg:border-x lg:border-white lg:px-16 lg:py-0">
+        <Card className="flex flex-col justify-between bg-p-dark py-10 text-white lg:rounded-none lg:border-0 lg:border-x lg:border-white lg:px-16 lg:py-0">
           <p className="leading-6 xl:text-lg">
-            For a local restaurant, we implemented a targeted PPC campaign that
-            resulted in a 50% increase in website traffic and a 25% increase in
-            sales.
+            For an online fashion retailer, we developed an SEO strategy that
+            improved their search engine rankings, leading to a 40% boost in
+            organic traffic and a 30% rise in monthly revenue.
           </p>
           <Link
             href="#"
@@ -44,11 +44,11 @@ export default function CaseStudies() {
             <Arrow color1="fill-p-green" className="w-5 -rotate-[30deg]" />
           </Link>
         </Card>
-        <Card className="bg-p-dark py-10 text-white lg:border-0 lg:px-16 lg:py-0">
+        <Card className="flex flex-col justify-between bg-p-dark py-10 text-white lg:border-0 lg:px-16 lg:py-0">
           <p className="leading-6 xl:text-lg">
-            For a local restaurant, we implemented a targeted PPC campaign that
-            resulted in a 50% increase in website traffic and a 25% increase in
-            sales.
+            For a SaaS provider, we executed a content marketing campaign that
+            increased lead generation by 35%, while reducing customer
+            acquisition costs by 20%.
           </p>
           <Link
             href="#"
